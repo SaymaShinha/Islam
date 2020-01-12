@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.css') }}">
+
+    <script rel="script" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+    <script rel="script" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script rel="script" src="{{ url_for('static', filename='js/fontawesome.js') }}"></script>
+    <script rel="script" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+    <title>Islam</title>
+</head>
+<body>
+<div>
+    <div class="header">
+        <h1 style="text-align: center;">Islam</h1>
+    </div>
+
+    <nav>
+        <ul class="sidenav">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('get_sample_quran') }}">Quran</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li>
+                <div class="search_div" style="margin: 2px;">
+                    <input type="search" style=" float: left; margin: auto; width: 85%;"/>
+                    <button style="float: left; margin: auto; width: 15%;"><i class="fa-search"></i></button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="main">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+</div>
+</body>
+</html>

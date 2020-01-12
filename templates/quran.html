@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2" style="padding: 7px; font-size: medium;">Surah</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in sample_quran %}
+            <tr class="sample_surah_info_tr">
+                <td onclick="window.open('{{ url_for('get_sample_surah', surah_number= item.surah_number) }}', '_self')">
+                    {{ item.surah_number }} . {{ item.surah_ar_name }}
+                    <br>
+                    {{ item.surah_en_name }} ( {{ item.surah_en_name_translation }} )
+                    ( {{ item.total_ayah }} )
+                    <br>
+                    {{ item.revelation_type }}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

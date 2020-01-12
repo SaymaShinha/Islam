@@ -1,0 +1,148 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div style="margin: 15px;">
+        <select id="arabic_language">
+            <option> Arabic</option>
+        </select>
+        <select id="arabic_language_ed_id" onchange="ar_language_ed_select(this)">
+        </select>
+        <select id="language_select_id" onchange="language_select(this)">
+            <option value="0">Other Language</option>
+        </select>
+
+        <select id="language_ed_id" onchange="name_select(this)">
+            <option value="0">Transelator</option>
+        </select>
+    </div>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th style="font-size: medium; padding: 7px;">
+                {{ sample_surah[0].surah_number }} . {{ sample_surah[0].surah_ar_name }}
+                <br>
+                {{ sample_surah[0].surah_en_name }} ( {{ sample_surah[0].surah_en_name_translation }} )
+                ( {{ sample_surah.__len__() }} )
+                <br>
+                {{ sample_surah[0].revelation_type }}
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td style="direction: rtl; border: none; font-size: x-large; padding: 7px; text-align: center; color: brown;">{{ bismillah_auzubillah[0].text }}</td>
+        </tr>
+        {% if sample_surah[0].surah_en_name != "At-Tawba" %}
+            <tr>
+                <td style="direction: rtl; border: none; font-size: x-large; padding: 7px; text-align: center; color: brown;">{{ bismillah_auzubillah[1].text }}</td>
+            </tr>
+        {% endif %}
+
+        {% for item in sample_surah %}
+            <tr id="ayah_tr">
+                <td id="ayah_{{ loop.index }}"
+                    style="float: right; direction: rtl;border: none; font-size: x-large; padding: 7px; text-align: right;">
+                    {{ loop.index }} . {{ item.text }} &#1758;
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            $.ajax({
+                url: "{{ url_for('get_default_lang_and_ed') }}",
+                type: 'POST',
+                success: function (data) {
+                    let ar_html_ed = '';
+                    let html = '';
+                    let html_ed = '';
+
+                    for ([key, value] of Object.entries(data)) {
+                        if (key == "Arabic") {
+                            for (edition of value) {
+                                if (edition == "Uthamani") {
+                                    ar_html_ed += '<option selected>' + edition + '</option>'
+                                } else {
+                                    ar_html_ed += '<option>' + edition + '</option>'
+                                }
+                            }
+                        } else {
+                            var lang = sessionStorage.getItem("lang")
+                            if (key == lang) {
+                                html += '<option selected>' + key + '</option>';
+                                for (edition of value) {
+                                    var ed_name = sessionStorage.getItem("ed_name");
+                                    if (edition == ed_name) {
+                                        html_ed += '<option selected>' + edition + '</option>';
+                                    } else {
+                                        html_ed += '<option>' + edition + '</option>';
+                                    }
+                                }
+                            } else {
+                                html += '<option>' + key + '</option>';
+                            }
+                        }
+                    }
+                    $('#language_select_id').html(html);
+                    $('#language_ed_id').html(html_ed).change();
+                    $('#arabic_language_ed_id').html(ar_html_ed);
+                }
+            })
+        });
+
+        function language_select(selected_lang) {
+            var lang = selected_lang.value;
+            sessionStorage.setItem("lang", lang);
+            $.ajax({
+                url: "{{ url_for('get_lang_ed') }}",
+                type: 'GET',
+                data: {"lang": lang},
+                success: function (data) {
+                    let html = '';
+                    for (let i = 0; i < data.length; i++) {
+                        html += '<option>' + data[i] + '</option>';
+                    }
+                    $('#language_ed_id').html(html).change();
+                }
+            })
+        }
+
+        function name_select(ed_name) {
+            var traslator_name = ed_name.value;
+            sessionStorage.setItem("ed_name", traslator_name);
+            $('trans_div').remove();
+            $.ajax({
+                url: "/surah/{{sample_surah[0].surah_number}}/" + traslator_name,
+                type: 'GET',
+                success: function (data) {
+                    for ([key, value] of Object.entries(data)) {
+                        let html = '';
+                        let i = 1 + parseInt(key);
+                        $('#ayah_' + i).after('<br><hr><div id="trans_div" style="margin: 5px;"><p id="translated_p"' +
+                            'style="float: right; direction: ltr;border: none; font-size: x-large; padding: 7px; text-align: right;">' +
+                            value + '</p></div>');
+                    }
+                }
+            })
+        }
+
+        /*function ar_language_ed_select(ar_ed) {
+            var ed_name = ar_ed.value;
+            sessionStorage.setItem("ed_name", ed_name);
+            $.ajax({
+                url: "/surah/{{sample_surah[0].surah_number}}/" + ed_name,
+                type: 'GET',
+                success: function (data) {
+
+                }
+            })
+        }*/
+    </script>
+
+{% endblock %}
+

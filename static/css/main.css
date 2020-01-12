@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+}
+
+ul.sidenav {
+    list-style-type: none;
+    padding: 0;
+    width: 16%;
+    background-color: #f1f1f1;
+    position: fixed;
+    overflow: auto;
+    margin-top: 111px;
+    margin-bottom: 5px;
+    height: 100%;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.sidenav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.main {
+    float: left;
+    width: 80%;
+    padding: 0 20px;
+    margin-left: 18%;
+    margin-top: 114px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table a {
+    color: black;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 7px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.sample_surah_info_tr {
+    border-radius: 4px;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.sample_surah_info_tr td {
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 7px;
+}
+
+.sample_surah_info_tr td:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.sample_surah_info_tr:hover td {
+    padding-left: 25px;
+    background-color: #67b168;
+}
+
+.sample_surah_info_tr:hover td:after {
+    opacity: 1;
+    right: 0;
+}
+
+.header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    float: right;
+    height: 100px;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        margin-top: 91px;
+        padding: 0px;
+    }
+
+    ul.sidenav li a, .search_div {
+        float: left;
+    }
+
+    .main {
+        width: 100%;
+        margin-top: 135px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search_div {
+        float: none;
+    }
+
+    .search_div input {
+        width: 80%;
+    }
+
+    .search_div button {
+        width: 12%;
+    }
+
+    .main {
+        margin-top: 164px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+        overflow: auto;
+    }
+
+    ul.sidenav {
+        text-align: center;
+        float: none;
+        overflow: auto;
+        margin-top: 90px;
+    }
+
+    .main {
+        margin-top: 268px;
+    }
+}
