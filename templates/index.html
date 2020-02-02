@@ -1,10 +1,422 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Islam</title>
+    <meta charset="utf-8">
+    <!-- older-->
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link type="text/css" rel="stylesheet"
+          href="{{ url_for('static', filename='css/fontawesome.css') }}">
+
+
+    <script rel="script" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+    <script rel="script" src="{{ url_for('static', filename='js/fontawesome.js') }}"></script>
+    <script rel="script" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script rel="script" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <!--end older-->
+
+    <!--[if lt IE 9]><script src="{{ url_for('static',filename='indexjs/html5.js')}}"></script><![endif]-->
+    <link rel="stylesheet" media="all" href="{{ url_for('static',filename='index/css/style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- JS -->
+    <script src="{{ url_for('static',filename='index/js/css3-mediaqueries.js') }}"></script>
+    <script src="{{ url_for('static',filename='index/js/custom.js') }}"></script>
+    <script src="{{ url_for('static',filename='index/js/tabs.js') }}"></script>
+
+    <!-- Tweet -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='index/css/jquery.tweet.css') }}" media="all">
+    <!-- ENDS Tweet -->
+    <!-- superfish -->
+    <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='index/css/superfish.css') }}">
+    <script src="{{ url_for('static',filename='index/js/superfish-1.4.8/js/hoverIntent.js') }}"></script>
+    <script src="{{ url_for('static',filename='index/js/superfish-1.4.8/js/superfish.js') }}"></script>
+    <script src="{{ url_for('static',filename='index/js/superfish-1.4.8/js/supersubs.js') }}"></script>
+    <!-- ENDS superfish -->
+    <!-- prettyPhoto -->
+    <script src="{{ url_for('static',filename='index/js/prettyPhoto/js/jquery.prettyPhoto.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='index/js/prettyPhoto/css/prettyPhoto.css') }}"
+          media="screen">
+    <!-- ENDS prettyPhoto -->
+    <!-- poshytip -->
+    <link rel="stylesheet"
+          href="{{ url_for('static',filename='index/js/poshytip-1.1/src/tip-twitter/tip-twitter.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static',filename='index/js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css') }}">
+    <script src="{{ url_for('static',filename='index/js/poshytip-1.1/src/jquery.poshytip.min.js') }}"></script>
+    <!-- ENDS poshytip -->
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'>
+    <!-- Flex Slider -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='index/css/flexslider.css') }}">
+    <script src="{{ url_for('static',filename='index/js/jquery.flexslider-min.js') }}"></script>
+    <!-- ENDS Flex Slider -->
+    <!-- Less framework -->
+    <link rel="stylesheet" media="all" href="{{ url_for('static',filename='index/css/lessframework.css') }}">
+    <!-- modernizr -->
+    <script src="{{ url_for('static',filename='index/js/modernizr.js') }}"></script>
+    <!-- SKIN -->
+    <link rel="stylesheet" media="all" href="{{ url_for('static',filename='index/css/skin.css') }}">
 </head>
 <body>
+<header class="clearfix">
+    <!-- top widget -->
+    <div id="top-widget-holder">
+        <div class="wrapper">
+            <div id="top-widget">
+                <div class="padding">
+                    <ul class="widget-cols clearfix">
+                        <li class="first-col">
+                            <div class="widget-block">
+                                <h4>Recent posts</h4>
+                                <div class="recent-post"><img
+                                        src="{{ url_for('static',filename='images/books.jpg') }}"
+                                        style="background-color:white; width: 54px; height: 54px;">
+                                    <div class="post-head"><a
+                                            href="{{ url_for('quran') }}">Books</a><span>last updated: March 12, 2011</span>
+                                    </div>
+                                </div>
+                                <div class="recent-post"><a href="#" class="thumb">
+                                    <img src="{{ url_for('static',filename='index/img/dummies/54x54.gif') }}"
+                                         alt=""></a>
+                                    <div class="post-head"><a href="#">Pellentesque habitant morbi
+                                        senectus</a><span> March 12, 2011</span>
+                                    </div>
+                                </div>
+                                <div class="recent-post"><a href="#" class="thumb"><img
+                                        src="{{ url_for('static',filename='index/img/dummies/54x54.gif') }}" alt=""></a>
+                                    <div class="post-head"><a href="#">Pellentesque habitant morbi
+                                        senectus</a><span> March 12, 2011</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="second-col">
+                            <div class="widget-block">
+                                <h4>Dummy text</h4>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                                    turpis
+                                    egestas. Vestibulum tortor quam, feugiat vitae, ultricies ege. Aenean ultricies
+                                    mi
+                                    vitae est. Mauris placerat eleifend leo.</p>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                            </div>
+                        </li>
+                        <li class="third-col">
+                            <div class="widget-block">
+                                <h4>Dummy text</h4>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                                    turpis
+                                    egestas. Vestibulum tortor quam, feugiat vitae, ultricies ege. Aenean ultricies
+                                    mi
+                                    vitae est. Mauris placerat eleifend leo.</p>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                            </div>
+                        </li>
+                        <li class="fourth-col">
+                            <div class="widget-block">
+                                <h4>Dummy text</h4>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                                    turpis
+                                    egestas. Vestibulum tortor quam, feugiat vitae, ultricies ege. Aenean ultricies
+                                    mi
+                                    vitae est. Mauris placerat eleifend leo.</p>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="top-open">Menu</a></div>
+    <!-- ENDS top-widget -->
+    <div class="wrapper clearfix" style="height: 43px; float: left;">
+        <a href="javascript:void(0);"
+           style="float: left; font-size: 32px; margin: 5px 5px 5px 22px; text-decoration: none;">Islam</a>
+        <nav style="float: left; margin: 13px 13px 0 40px;">
+            <ul id="nav" class="sf-menu">
+                <li class="current-menu-item"><a href="{{ url_for('home') }}" style="">Home</a></li>
+                <li><a href="{{ url_for('quran') }}">Quran</a>
+                    <ul>
+                        <li><a href="{{ url_for("surah", surah_number= 1) }}">Surah</a></li>
+                    </ul>
+                </li>
+                <li><a href="page.html">Books</a>
+                    <ul>
+                        <li><a href="#">Submenu</a></li>
+                        <li><a href="#">Submenu</a></li>
+                        <li><a href="#">Submenu</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="combo-holder">
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- MAIN -->
+<div id="main" align="center">
+    <button class="round_button" id="top_scrolling_button"
+            style="display: none; color: black; left: 2px; bottom: 19px;"
+            onclick="scrollingToTopFunction()" title="Top">▲
+    </button>
+    <div class="wrapper clearfix" style="margin: 10px;">
+        <div class="col-md-12">
+            <div class="" style="margin: 10px;">
+                <span>Method</span>
+                <select class="form-control" id="method_select_id" onchange="selected_method_namaztime(this);">
+                    <option value="-1">Method</option>
+                    <option value="0">Shia Ithna-Ansari</option>
+                    <option value="1">University of Islamic Sciences, Karachi</option>
+                    <option value="2">Islamic Society of North America</option>
+                    <option value="3" selected>Muslim World League</option>
+                    <option value="4">Umm Al-Qura University, Makkah</option>
+                    <option value="5">Egyptian General Authority of Survey</option>
+                    <option value="7">Institute of Geophysics, University of Tehran</option>
+                    <option value="8">Gulf Region</option>
+                    <option value="9">Kuwait</option>
+                    <option value="10">Qatar</option>
+                    <option value="11">Majlis Ugama Islam Singapura, Singapore</option>
+                    <option value="12">Union Organization islamic de France</option>
+                    <option value="13">Diyanet İşleri Başkanlığı, Turkey</option>
+                    <option value="14">Spiritual Administration of Muslims of Russia</option>
+                </select>
+            </div>
+            <div class="" style="margin: 10px;">
+                <span>Location</span>
+                <select class="form-control" id="select_address_id" onchange="selected_address_namaztime(this)">
+                    <option>Device Location</option>
+                </select>
+            </div>
+        </div>
+        <div class="flexslider col-lg-12">
+            <div id="headline" align="center">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th colspan="2">
+                            <h1>Namaz Time</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><span>Next:</span><span id="next_waqt_show_span"> Waqt</span></th>
+                        <td><span id="next_waqt_watch_span">Watch</span></td>
+                    </tr>
+                    <tr>
+                        <th class="time"></th>
+                    </tr>
+                    </thead>
+                    <tbody id="namaz_time_tbody_id">
+                    <tr>
+                        <td class="Imsak">Imsak</td>
+                    </tr>
+                    <tr>
+                        <td class="Fajr">Fajr</td>
+                    </tr>
+                    <tr>
+                        <td class="Sunrise">Sunrise</td>
+                    </tr>
+                    <tr>
+                        <td class="Dhuhr">Dhuhr</td>
+                    </tr>
+                    <tr>
+                        <td class="Asr">Asr</td>
+                    </tr>
+                    <tr>
+                        <td class="Maghrib">Maghrib</td>
+                    </tr>
+                    <tr>
+                        <td class="Sunset">Sunset</td>
+                    </tr>
+                    <tr>
+                        <td class="Isha">Isha</td>
+                    </tr>
+                    <tr>
+                        <td class="Midnight">Midnight</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </p>
+            </div>
+        </div>
 
+        <!-- page content -->
+
+        <!--  page content-->
+    </div>
+</div>    <!-- ENDS MAIN -->
+<footer>
+
+</footer>
 </body>
 </html>
+
+<script rel="script" src="{{ url_for('static', filename='js/main.js') }}"></script>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/select2.min.css') }}">
+<script rel="script" src="{{ url_for('static', filename='js/select2.min.js') }}"></script>
+
+
+<script rel="script">
+    $(document).ready(function () {
+        top_btn = document.getElementById("top_scrolling_button");
+        window.onscroll = function () {
+            on_scroll_show_btn_Function();
+        };
+
+        var address = sessionStorage.getItem("address");
+        var method_id = sessionStorage.getItem("method_id");
+
+        if (method_id) {
+            $('#method_select_id').val(method_id);
+        } else {
+            $('#method_select_id').val("3");
+            sessionStorage.setItem("method_id", "3");
+            sessionStorage.setItem("method", "Muslim World League");
+        }
+
+        if (address === "Device Location" || !address) {
+            sessionStorage.setItem("address", "Device Location");
+            get_namaztime_by_device_location();
+        } else {
+            show_namaz_time_by_address(address);
+            var address_id = sessionStorage.getItem("address_id");
+            $('#select_address_id').append('<option selected>' + address + '</option>');
+
+        }
+
+        $("#method_select_id").select2();
+        get_addresses_from_db();
+    });
+
+    function on_scroll_show_btn_Function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 20) {
+            (top_btn).style.display = "block";
+        } else {
+            (top_btn).style.display = "none";
+        }
+    }
+
+    function scrollingToTopFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    function get_addresses_from_db() {
+        $('#select_address_id').select2({
+            minimumInputLength: 3,
+            ajax: {
+                url: 'get_addresses_from_db',
+                dataType: 'json',
+            }
+        });
+    }
+
+    function selected_method_namaztime(selected_method) {
+        var method = $("#method_select_id option:selected").html();
+        var method_id = selected_method.value;
+        sessionStorage.setItem("method", method);
+        sessionStorage.setItem("method_id", method_id);
+        var address = sessionStorage.getItem("address");
+        if (address !== "Device Location") {
+            show_namaz_time_by_address(address, method_id);
+        } else {
+            get_namaztime_by_device_location(method_id);
+        }
+    }
+
+    function selected_address_namaztime(selected_address) {
+        var address = $("#select_address_id option:selected").html();
+        sessionStorage.setItem("address_id", selected_address.value);
+        sessionStorage.setItem("address", address);
+        var method_id = sessionStorage.getItem("method_id");
+        show_namaz_time_by_address(address, method_id)
+    }
+
+    function get_namaztime_by_device_location() {
+        var namaz_time = document.getElementById("namaz_time_id");
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(show_namaz_time_by_device_location);
+        } else {
+            namaz_time.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function show_namaz_time_by_device_location(position, method_id = "3") {
+        var address = sessionStorage.getItem("address");
+        var method = sessionStorage.getItem("method");
+
+        $(".namaztime_value").remove();
+        $(".time").after('<td class="namaztime_value">' + address + '(' + method + ')</td>');
+
+        $.ajax({
+            url: "{{ url_for('get_namaz_time_by_device_latitude_longitude') }}",
+            type: 'GET',
+            data: {
+                "latitude": position.coords.latitude,
+                "longitude": position.coords.longitude,
+                "method": method_id
+            },
+            success: function (data) {
+                for ([key, value] of Object.entries(data)) {
+                    if (key === "Imsak") {
+                        $(".Imsak").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Fajr") {
+                        $(".Fajr").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Sunrise") {
+                        $(".Sunrise").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Dhuhr") {
+                        $(".Dhuhr").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Asr") {
+                        $(".Asr").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Maghrib") {
+                        $(".Maghrib").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Sunset") {
+                        $(".Sunset").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Isha") {
+                        $(".Isha").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Midnight") {
+                        $(".Midnight").after('<td class="namaztime_value">' + value + '</td>')
+                    }
+                }
+            }
+        });
+    }
+
+    function show_namaz_time_by_address(address, method_id = "3") {
+        var method = sessionStorage.getItem("method");
+
+        $(".namaztime_value").remove();
+        $(".time").after('<td class="namaztime_value">' + address + '(' + method + ')</td>');
+
+        $.ajax({
+            url: "{{ url_for('get_namaz_time_by_address') }}",
+            type: 'GET',
+            data: {"address": address, "method": method_id},
+            success: function (data) {
+                for ([key, value] of Object.entries(data)) {
+                    if (key === "Imsak") {
+                        $(".Imsak").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Fajr") {
+                        $(".Fajr").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Sunrise") {
+                        $(".Sunrise").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Dhuhr") {
+                        $(".Dhuhr").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Asr") {
+                        $(".Asr").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Maghrib") {
+                        $(".Maghrib").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Sunset") {
+                        $(".Sunset").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Isha") {
+                        $(".Isha").after('<td class="namaztime_value">' + value + '</td>')
+                    } else if (key === "Midnight") {
+                        $(".Midnight").after('<td class="namaztime_value">' + value + '</td>')
+                    }
+                }
+            }
+        });
+    }
+
+
+</script>
