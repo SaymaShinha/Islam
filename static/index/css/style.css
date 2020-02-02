@@ -36,15 +36,9 @@ body{
 }
 
 
-
-body p{
-	margin-bottom: 21px;
-}
-
 body a{
 	text-decoration: none;
 }
-
 
 
 #logo{
@@ -445,7 +439,7 @@ nav a{
 /* MAIN ------------------------------------------------------------*/
 
 #main{
-	margin: 44px 0;
+	margin: 0;
 }
 
 /* PORTFOLIO ------------------------------------------------------------*/

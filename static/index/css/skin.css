@@ -16,7 +16,7 @@ body a:hover,
 #top-widget-holder a:hover,
 #nav>li>a:hover,
 .project-heading .launch:hover{
-	color: #67b168;
+	color: #004B11;
 }
 
 h1,h2,h3,h4,h5,h6{ color: #444444; }
@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5,h6{ color: #444444; }
 
 /* HEADER ------------------------------------------------------------*/
 
-header{ background: white;}
+header{ background: #32bd9d;}
 
 
 /* WIDGETS------------------------------------------------*/
@@ -51,7 +51,7 @@ header{ background: white;}
 
 nav a, nav a:hover, nav a:active{
 	text-decoration: none;
-	color: #575A5A;;
+	color: white;;
 }
 
 #nav>li.current-menu-item>a,
@@ -67,6 +67,7 @@ nav a, nav a:hover, nav a:active{
 
 #nav>li ul li a:hover,
 #nav>li ul li:nth-child(even) a:hover{
+	color: #004B11;
 }
 
 

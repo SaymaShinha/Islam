@@ -147,20 +147,6 @@ td, th {
 }
 
 
-
-#surah_ayah_audio_div_id {
-    bottom: 7px;
-    left: 198px;
-    position: fixed;
-    z-index: 99;
-    cursor: pointer;
-    padding: 0px;
-    border-radius: 50px;
-    box-shadow: 2px 2px 3px #999;
-}
-
-
-
 input[type="text"] {
   height: 28px;
   font-size: 18px;
@@ -186,7 +172,7 @@ input[type="text"]:focus:hover {
 }
 
 input[type="text"]:focus {
-  width: 80%;
+  width: 100%;
   z-index: 1;
   border-bottom: 1px solid #BBB;
   cursor: text;
@@ -212,4 +198,15 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   opacity: 0.8;
+}
+
+.wrapper .row{
+    height: 44px;
+    padding: 8px 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    float: right;
+    position: -webkit-sticky;
+    position: sticky; top: 0;
+    bottom: 8px;
 }

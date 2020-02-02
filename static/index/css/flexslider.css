@@ -36,9 +36,7 @@ html[xmlns] .slides {display: block;}
 *********************************/
 .flexslider {
 	background: white;
-	position: relative;
 	zoom: 1;
-	
 	-webkit-box-shadow: 2px 2px 0px rgba(0,0,0,.2);
 	-moz-box-shadow: 2px 2px 0px rgba(0,0,0,.2);
 	-o-box-shadow: 2px 2px 0px rgba(0,0,0,.2);
