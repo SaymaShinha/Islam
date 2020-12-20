@@ -4,4 +4,4 @@ psycopg2
 sqlalchemy
 flask-sqlalchemy
 flask-migrate
-gunicorn
+mysql-connector-python

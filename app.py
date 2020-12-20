@@ -9,8 +9,12 @@ import csv
 from sqlalchemy import or_, func
 
 app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+mysqlconnector://islamweb:UgtLQY@Ytj2u5b3@islamweb.mysql.pythonanywhere-services.com/islamweb$islam"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
+
+
 
 
 class Quran_Editions(db.Model):
@@ -43,7 +47,7 @@ class Quran_text_ayah_info(db.Model):
     surah_en_name_translation = db.Column(db.String(50000), nullable=False)
     revelation_type = db.Column(db.String(120), nullable=False)
     ayah_number = db.Column(db.Integer, nullable=False)
-    text = db.Column(db.String(), nullable=False)
+    text = db.Column(db.String(300), nullable=False)
     juz = db.Column(db.Integer, nullable=False)
     manzil = db.Column(db.Integer, nullable=False)
     page = db.Column(db.Integer, nullable=False)
@@ -69,9 +73,9 @@ class Quran_audio_ayah_info(db.Model):
     surah_en_name_translation = db.Column(db.String(50000), nullable=False)
     revelation_type = db.Column(db.String(120), nullable=False)
     ayah_number = db.Column(db.Integer, nullable=False)
-    audio = db.Column(db.String(), nullable=False)
-    audio_secondary = db.Column(db.String(), nullable=False)
-    text = db.Column(db.String(), nullable=False)
+    audio = db.Column(db.String(300), nullable=False)
+    audio_secondary = db.Column(db.String(300), nullable=False)
+    text = db.Column(db.String(300), nullable=False)
     juz = db.Column(db.Integer, nullable=False)
     manzil = db.Column(db.Integer, nullable=False)
     page = db.Column(db.Integer, nullable=False)
@@ -90,15 +94,15 @@ class Quran_audio_ayah_info(db.Model):
 
 class Quran_exist_in_database(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    language = db.Column(db.String, nullable=False)
-    name = db.Column(db.String, nullable=False)
+    language = db.Column(db.String(300), nullable=False)
+    name = db.Column(db.String(300), nullable=False)
 
 
 class World_cities(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    city = db.Column(db.String, nullable=False)
-    country = db.Column(db.String, nullable=False)
-    subcountry = db.Column(db.String, nullable=False)
+    city = db.Column(db.String(300), nullable=False)
+    country = db.Column(db.String(300), nullable=False)
+    subcountry = db.Column(db.String(300), nullable=False)
 
 
 @app.route('/save_world_cities')
