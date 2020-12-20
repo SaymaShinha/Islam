@@ -11,4 +11,4 @@ phases:
   build:
     commands:
       - docker images
-      - docker run islam echo "Hello, World!"
+      - docker run -p 5001:5000 islam

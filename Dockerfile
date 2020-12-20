@@ -6,5 +6,5 @@ RUN \
  apk add --no-cache postgresql-libs && \
  apk add --no-cache --virtual .build-deps gcc musl-dev postgresql-dev
 RUN pip install -r requirements.txt
-ENTRYPOINT ["python"]
+EXPOSE 5000
 CMD ["/bin/bash", "entrypoint.sh"]
