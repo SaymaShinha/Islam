@@ -1,5 +1,6 @@
+flask
 requests
-psycopg2
+psycopg2-binary
 sqlalchemy
 flask-sqlalchemy
-Flask-Migrate
+flask-migrate
