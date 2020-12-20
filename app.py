@@ -9,8 +9,6 @@ import csv
 from sqlalchemy import or_, func
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://sayma:123@localhost:5432/islam"
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
