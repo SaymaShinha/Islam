@@ -23,8 +23,8 @@ h1,h2,h3,h4,h5,h6{ color: #444444; }
 
 /* Selection colours (easy to forget) */
 
-::selection 	 	{background: #C6CE1B; color: #fff; }
-::-moz-selection 	{background: #C6CE1B; color: #fff; }
+::selection 	 	{background: #cec840; color: #fff; }
+::-moz-selection 	{background: #cec840; color: #fff; }
 
 /* HEADER ------------------------------------------------------------*/
 

@@ -3,11 +3,12 @@
 <head>
     <title>Islam</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!-- older-->
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
-    <link type="text/css" rel="stylesheet"
-          href="{{ url_for('static', filename='css/fontawesome.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.css') }}">
 
 
     <script rel="script" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
@@ -15,243 +16,162 @@
     <script rel="script" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <!--end older-->
 
-    <!--[if lt IE 9]><script src="{{ url_for('static',filename='indexjs/html5.js')}}"></script><![endif]-->
+    <!--[if lt IE 9]-->
+    <script src="{{ url_for('static',filename='index/js/html5.js') }}"></script>
+    <!--[endif]-->
     <link rel="stylesheet" media="all" href="{{ url_for('static',filename='index/css/style.css') }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- JS -->
-    <script src="{{ url_for('static',filename='index/js/css3-mediaqueries.js') }}"></script>
-    <script src="{{ url_for('static',filename='index/js/custom.js') }}"></script>
-    <script src="{{ url_for('static',filename='index/js/tabs.js') }}"></script>
 
-    <!-- Tweet -->
-    <link rel="stylesheet" href="{{ url_for('static',filename='index/css/jquery.tweet.css') }}" media="all">
-    <!-- ENDS Tweet -->
+
     <!-- superfish -->
     <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='index/css/superfish.css') }}">
-    <script src="{{ url_for('static',filename='index/js/superfish-1.4.8/js/hoverIntent.js') }}"></script>
-    <script src="{{ url_for('static',filename='index/js/superfish-1.4.8/js/superfish.js') }}"></script>
-    <script src="{{ url_for('static',filename='index/js/superfish-1.4.8/js/supersubs.js') }}"></script>
     <!-- ENDS superfish -->
-    <!-- prettyPhoto -->
-    <script src="{{ url_for('static',filename='index/js/prettyPhoto/js/jquery.prettyPhoto.js') }}"></script>
-    <link rel="stylesheet" href="{{ url_for('static',filename='index/js/prettyPhoto/css/prettyPhoto.css') }}"
-          media="screen">
-    <!-- ENDS prettyPhoto -->
-    <!-- poshytip -->
-    <link rel="stylesheet"
-          href="{{ url_for('static',filename='index/js/poshytip-1.1/src/tip-twitter/tip-twitter.css') }}">
-    <link rel="stylesheet"
-          href="{{ url_for('static',filename='index/js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css') }}">
-    <!-- ENDS poshytip -->
-    <!-- GOOGLE FONTS -->
-    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'>
-    <!-- Flex Slider -->
-    <link rel="stylesheet" href="{{ url_for('static',filename='index/css/flexslider.css') }}">
-    <script src="{{ url_for('static',filename='index/js/jquery.flexslider-min.js') }}"></script>
-    <!-- ENDS Flex Slider -->
+
     <!-- Less framework -->
     <link rel="stylesheet" media="all" href="{{ url_for('static',filename='index/css/lessframework.css') }}">
-    <!-- modernizr -->
-    <script src="{{ url_for('static',filename='index/js/modernizr.js') }}"></script>
+
     <!-- SKIN -->
     <link rel="stylesheet" media="all" href="{{ url_for('static',filename='index/css/skin.css') }}">
+
+    <style>
+        th {
+            font-size: 25px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        tr {
+            padding: 7px;
+            margin: 20px;
+            background-color: white;
+        }
+
+        td {
+            width: 100%;
+            padding: 40px;
+        }
+
+        td div:first-child {
+            color: darkgreen;
+            font-size: larger;
+        }
+
+        td div {
+            padding: 16px;
+        }
+    </style>
 </head>
 <body>
 <header class="clearfix">
-    <!-- top widget -->
-    <div id="top-widget-holder">
-        <div class="wrapper">
-            <div id="top-widget">
-                <div class="padding">
-                    <ul class="widget-cols clearfix">
-                        <li class="first-col">
-                            <div class="widget-block">
-                                <h4>Recent posts</h4>
-                                <div class="recent-post"><img
-                                        src="{{ url_for('static',filename='images/books.jpg') }}"
-                                        style="background-color:white; width: 54px; height: 54px;">
-                                    <div class="post-head"><a
-                                            href="{{ url_for('quran') }}">Books</a><span>last updated: March 12, 2011</span>
-                                    </div>
-                                </div>
-                                <div class="recent-post"><a href="#" class="thumb">
-                                    <img src="{{ url_for('static',filename='index/img/dummies/54x54.gif') }}"
-                                         alt=""></a>
-                                    <div class="post-head"><a href="#">Pellentesque habitant morbi
-                                        senectus</a><span> March 12, 2011</span>
-                                    </div>
-                                </div>
-                                <div class="recent-post"><a href="#" class="thumb"><img
-                                        src="{{ url_for('static',filename='index/img/dummies/54x54.gif') }}" alt=""></a>
-                                    <div class="post-head"><a href="#">Pellentesque habitant morbi
-                                        senectus</a><span> March 12, 2011</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="second-col">
-                            <div class="widget-block">
-                                <h4>Dummy text</h4>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                                    turpis
-                                    egestas. Vestibulum tortor quam, feugiat vitae, ultricies ege. Aenean ultricies
-                                    mi
-                                    vitae est. Mauris placerat eleifend leo.</p>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
-                            </div>
-                        </li>
-                        <li class="third-col">
-                            <div class="widget-block">
-                                <h4>Dummy text</h4>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                                    turpis
-                                    egestas. Vestibulum tortor quam, feugiat vitae, ultricies ege. Aenean ultricies
-                                    mi
-                                    vitae est. Mauris placerat eleifend leo.</p>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
-                            </div>
-                        </li>
-                        <li class="fourth-col">
-                            <div class="widget-block">
-                                <h4>Dummy text</h4>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                                    turpis
-                                    egestas. Vestibulum tortor quam, feugiat vitae, ultricies ege. Aenean ultricies
-                                    mi
-                                    vitae est. Mauris placerat eleifend leo.</p>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <a href="#" id="top-open">Menu</a></div>
-    <!-- ENDS top-widget -->
     <div class="wrapper clearfix" style="height: 43px; float: left;">
-        <span style="font-size:23px;cursor:pointer;float: left;margin: 10px; color: white;"
-              onclick="openNav()">&#9776;</span>
+        <span id="nav_span" onclick="openNav()">&#9776;</span>
         <nav style="float: left; margin: 13px 13px 0 40px;">
             <ul id="nav" class="sf-menu">
                 <li><a href="{{ url_for('home') }}" style="">Home</a></li>
-                <li><a href="{{ url_for('quran') }}">Quran</a>
-                    <ul>
-                        <li class="current-menu-item"><a href="{{ url_for("surah", surah_number= 1) }}">Surah</a></li>
-                    </ul>
-                </li>
+                <li><a href="{{ url_for('quran') }}">Quran</a></li>
+                <li><a href="{{ url_for('surah', surah_number=1) }}">Surah</a></li>
             </ul>
-
             <div id="combo-holder">
             </div>
         </nav>
-
     </div>
 
     <div id="mySidenav" class="sidenav clearfix">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="javascript:void(0)">Language</a>
-        <div id="languageDiv" style="display: block;">
-            <div class="col-lg-12">
-                <div class="col-lg-12" style="padding: 7px;">
-                    <select class="form-control" name="states[]" id="arabic_language_id"
-                            style="min-width: 120px;" onchange="ar_language_select(this)" multiple>
-                        <option>Arabic</option>
-                    </select>
-                </div>
-
-                <div class="col-lg-12" style="padding: 7px;">
-                    <select class="form-control" name="states[]" id="language_id"
-                            style="min-width: 120px;" onchange="language_select(this)" multiple>
-                    </select>
-                </div>
-
-                <div class="col-lg-12" style="padding: 7px;">
-                    <select class="form-control" name="states[]" id="language_translator_id"
-                            style="min-width: 120px;"
-                            onchange="translator_select(this)" multiple>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <a href="javascript:void(0)" style="text-decoration: none;">Audio</a>
-        <div id="audioDiv">
-            <div class="col-lg-12">
-                <div class="col-lg-12" style="padding: 7px;">
-                    <select id="audio_select_id" class="form-control" style="min-width: 120px;" name="state"
-                            onchange="audio_select(this)">
-                    </select>
-                </div>
-            </div>
-        </div>
+        <a href="{{ url_for('home') }}" style="">Home</a>
+        <a href="{{ url_for('quran') }}">Quran</a>
+        <a href="{{ url_for('surah', surah_number=1) }}">Surah</a>
     </div>
 
 </header>
 <!-- MAIN -->
 <div id="main">
-    <button class="round_button" id="top_scrolling_button"
-            style="display: none; color: black; left: 2px; bottom: 19px;"
-            onclick="scrollingToTopFunction()" title="Top">▲
-    </button>
     <div class="wrapper">
         <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2"
-                 style="padding: 0; margin: 0 6px 0 0;">
-                <select class="form-control" id="surah_id" onchange="get_surah()">
+            <div class="col-xs-5 col-sm-3 col-md-2 col-lg-2"
+                 style="padding: 0; margin: 6px;">
+                <select class="form-control" id="surah_id" onchange="get_surah(this)">
                 </select>
             </div>
 
-            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding: 0; margin: 0 6px;">
-                <select class="form-control" id="ayah_number_id" onchange="get_ayah(this); return false;">
+            <div class="col-xs-5 col-sm-1 col-md-1 col-lg-1" style="padding: 0; margin: 6px;">
+                <select class="form-control" id="ayah_number_id" onchange="get_ayah(this);">
+
                 </select>
             </div>
 
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"
-                 style="padding: 0; margin: 0 6px;">
-                <select class="form-control" id="language_id_on_main">
+            <div class="col-xs-5 col-sm-2 col-md-2 col-lg-2"
+                 style="padding: 0; margin: 6px;">
+                <select class="form-control" id="trans_language_id" onchange="get_trans_language();">
+                    <!--   <option value="Sherif Ahmeti">Albanian</option>
+                       <option value="Uthamani">Arabic</option>
+                       <option value="Məmmədəliyev & Bünyadov">Azerbaijani</option>
+                       <option value="মুহিউদ্দীন খান">Bangla</option>
+                       <option value="Korkut">Bosnian</option>
+                       <option value="Теофанов">Bulgarian</option>
+                       <option value="Ma Jian">Chinese</option>
+                       <option value="Nykl">Czech</option>
+                       <option value="Keyzer">Dutch</option>
+                       <option value="Ahmed Raza Khan">English</option>
+                       <option value="Hamidullah">French</option>
+                       <option value="Bubenheim & Elyas">German</option>
+                       <option value="Gumi">Hausa</option>
+                       <option value="फ़ारूक़ ख़ान & नदवी">Hindi</option>
+                       <option value="Bahasa Indonesia">Indonesian</option>
+                       <option value="Piccardo">Italian</option>
+                       <option value="Korkut">Japanese</option>
+                       <option value="Korkut">Bosnian</option>
+                       <option value="Korkut">Bosnian</option>
+                       <option value="Korkut">Bosnian</option>
+                       <option value="Korkut">Bosnian</option>
+                       <option value="Korkut">Bosnian</option>
+                       <option value="Korkut">Bosnian</option>
+   -->
                 </select>
             </div>
-
-
-            <div class="col-xs-4 col-sm-5 col-md-5 col-lg-5"
-                 style="padding: 0; height: 28px; margin: 0 0 0 6px; float: right;">
-                <form action="" autocomplete="off">
-                    <input name="search" type="text" placeholder="What're we looking for ?">
-                    <input id="search_submit" value="Rechercher" type="submit">
-                </form>
-            </div>
+            <!--
+                        <div class="col-xs-5 col-sm-5 col-md-6 col-lg-6"
+                             style="padding: 0; height: 28px; float: right;">
+                            <form action="" autocomplete="off">
+                                <input id="surah_search_Input" name="search" type="text" onkeyup="surahSearchFunction()"
+                                       placeholder="Search for surah...">
+                                <input value="Rechercher" type="submit">
+                            </form>
+                        </div>
+            -->
         </div>
-        <!-- slider holder -->
+
+
         <div id="slider-holder" class="clearfix">
             <!-- slider -->
             <div class="flexslider">
-                <div id="surahDiv" style="padding: 50px;" onclick="closeNav()">
-                    <table class="table" id="surah_table" style="margin-left: 7px;">
+                <div id="surahDiv" onclick="closeNav()" style="margin: auto;">
+                    <table class="table" id="surah_table">
                         <thead>
-                        <tr>
-                            <th style="font-size: 25px; padding: 7px; text-align: center;">
+                        {% if  sample_surah.length != 0 %}
+                            <th style="font-size: 25px; padding: 40px; text-align: center;">
                                 {{ sample_surah[0].surah_number }} . {{ sample_surah[0].surah_ar_name }}
                                 <br>
-                                {{ sample_surah[0].surah_en_name }} ( {{ sample_surah[0].surah_en_name_translation }} )
+                                {{ sample_surah[0].surah_en_name }}
+                                ( {{ sample_surah[0].surah_en_name_translation }} )
                                 ( {{ sample_surah.__len__() }} )
                                 <br>
                                 {{ sample_surah[0].revelation_type }}
                             </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr style="">
-                            <td style="direction: rtl; border: none; font-size: 32px; padding: 7px; text-align: center; color: brown;">{{ bismillah_auzubillah[0].text }}</td>
-                        </tr>
-                        {% if sample_surah[0].surah_en_name != "At-Tawba" %}
-                            <tr>
-                                <td style="direction: rtl; border: none; font-size: 32px; padding: 7px; text-align: center; color: brown;">{{ bismillah_auzubillah[1].text }}</td>
-                            </tr>
                         {% endif %}
 
+                        </thead>
+                        <tbody>
+                        <tr id="bismi_auzu_tr_id">
+                            <td id="bismi_auzu_td_id" style="padding: 40px;">
+                                أعوذ بالله من الشيطان الرجيم
+                                <br>بِسْمِ ٱللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+                            </td>
+                        </tr>
                         {% for item in sample_surah %}
-                            <tr id="ayah_tr" style="padding: 7px; margin: 20px;">
-                                <td class="ayah_td" id="ayah_{{ loop.index }}">
-                                    <div id="ayah_div_{{ loop.index }}"> {{ loop.index }} . {{ item.text }} &#1758;
+                            <tr class="ayah_tr_class" style="padding: 7px; margin: 20px 5px;">
+                                <td class="ayah_td" id="ayah_{{ loop.index }}" style="padding: 40px;">
+                                    <div class="ayah_div_{{ loop.index }}"> {{ loop.index }} . {{ item.text }}
+                                        &#1758;</span>
                                     </div>
                                 </td>
                             </tr>
@@ -263,6 +183,7 @@
 
             <!-- ENDS slider -->
         </div>
+
         <!-- ENDS slider holder -->
     </div>
 
@@ -275,218 +196,138 @@
 </html>
 
 <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/select2.min.css') }}">
-<script rel="script" src="{{ url_for('static', filename='js/main.js') }}"></script>
 <script rel="script" src="{{ url_for('static', filename='js/select2.min.js') }}"></script>
+<script rel="script" href="{{ url_for('static', filename='js/main.js') }}"></script>
+
 
 <script type="text/javascript">
     $(document).ready(function () {
-        sessionStorage.setItem("surah", "{{sample_surah[0].surah_number}}.{{sample_surah[0].surah_en_name}}");
-        var selectedAudio = sessionStorage.getItem("audio_vocal");
-        if (!selectedAudio) {
-            sessionStorage.setItem("audio_vocal", "Alafasy");
-        }
+        $('#surah_id').select2({placeholder: "Surah"});
+        $('#ayah_number_id').select2({placeholder: "Ayah"});
+        $("#trans_language_id").select2({placeholder: "Language"});
 
-        $('#arabic_language_id').select2({placeholder: "default"});
-        $('#language_id').select2({placeholder: "Language"});
-        $("#language_id_on_main").select2({placeholder: "Language"});
-        $('#language_translator_id').select2({placeholder: "Translator"});
-        $('#audio_select_id').select2({placeholder: "Not Selected"});
-        $('#surah_id').select2();
-        $('#ayah_number_id').select2({placeholder:"Ayah"});
 
-        get_surah_lang();
-        get_surah_audio_vocal();
-        quran_info();
-        get_audio(sessionStorage.getItem("audio_vocal"));
+        fill_surah();
+        fill_language();
+
+        $("#trans_language_id").select2({matcher: modelMatcher});
     });
 
-    function quran_info() {
-        $.ajax({
-            url: "/get_quran",
-            type: 'GET',
-            success: function (data) {
-                html = "";
-                for ([key, value] of Object.entries(data)) {
-                    var surah = sessionStorage.getItem("surah");
-                    if (key === surah) {
-                        html += '<option value="' + value + '" selected>' + key + '</option>';
-                        var num_html = "<option></option>";
-                        for (let i = 1; i <= value; i++) {
-                            num_html += '<option style="text-align: center;">' + i + '</option>';
-                        }
-                        $('#ayah_number_id').html(num_html);
-                    } else {
-                        html += '<option value="' + value + '">' + key + '</option>';
-                    }
+    function modelMatcher(params, data) {
+        data.parentText = data.parentText || "";
+
+        // Always return the object if there is nothing to compare
+        if ($.trim(params.term) === '') {
+            return data;
+        }
+
+        // Do a recursive check for options with children
+        if (data.children && data.children.length > 0) {
+            // Clone the data object if there are children
+            // This is required as we modify the object to remove any non-matches
+            var match = $.extend(true, {}, data);
+
+            // Check each child of the option
+            for (var c = data.children.length - 1; c >= 0; c--) {
+                var child = data.children[c];
+                child.parentText += data.parentText + " " + data.text;
+
+                var matches = modelMatcher(params, child);
+
+                // If there wasn't a match, remove the object in the array
+                if (matches == null) {
+                    match.children.splice(c, 1);
                 }
-                $('#surah_id').html(html)
             }
-        })
+
+            // If any children matched, return the new object
+            if (match.children.length > 0) {
+                return match;
+            }
+
+            // If there were no matching children, check just the plain object
+            return modelMatcher(params, match);
+        }
+
+        // If the typed-in term matches the text of this term, or the text from any
+        // parent term, then it's a match.
+        var original = (data.parentText + ' ' + data.text).toUpperCase();
+        var term = params.term.toUpperCase();
+
+
+        // Check if the text contains the term
+        if (original.indexOf(term) > -1) {
+            return data;
+        }
+
+        // If it doesn't contain the term, don't return anything
+        return null;
     }
 
-    function get_surah_lang() {
+
+    function fill_surah() {
         $.ajax({
-            url: "{{ url_for('get_surah_text_lang') }}",
-            type: 'POST',
+            url: "{{ url_for('fill_surah') }}",
+            type: 'GET',
             success: function (data) {
-                let ar_html = '<option></option>';
-                let translator_html = '<option></option>';
-                let lang_html = '<option></option>';
-                let main_lang_html = '<option></option>';
+                $('.surah_name_opt').remove();
+                var html = "";
 
                 for ([key, value] of Object.entries(data)) {
-                    if (key === "Arabic") {
-                        for (ar_translator of value) {
-                            var ar_name = sessionStorage.getItem("ar_name");
-                            if (ar_translator === ar_name) {
-                                ar_html += '<option selected>' + ar_translator + '</option>'
-                            } else {
-                                ar_html += '<option>' + ar_translator + '</option>'
-                            }
-                        }
-                    } else {
-                        var lang = sessionStorage.getItem("lang");
-
-                        if (key === lang) {
-                            lang_html += '<option selected>' + key + '</option>';
-                            main_lang_html += '<option selected>' + key + '</option>';
-                            for (translator of value) {
-                                var traslator_name = sessionStorage.getItem("traslator_name");
-                                if (translator === traslator_name) {
-                                    translator_html += '<option selected>' + translator + '</option>';
-                                    $('#language_translator_id').html(translator_html).change();
-                                } else {
-                                    translator_html += '<option>' + translator + '</option>';
-                                }
-                                $('#language_translator_id').html(translator_html);
-                            }
-                        } else {
-                            lang_html += '<option>' + key + '</option>';
-                            main_lang_html += '<option>' + key + '</option>';
-                        }
-                    }
+                    html += '<option class="surah_name_opt" value="' + value.surah_number + '.' + value.total_ayah + '" style="font-size: 28px;">' +
+                        value.surah_number + '. ' + value.surah_en_name + '</option>';
                 }
-                $('#arabic_language_id').html(ar_html);
-                $('#language_id').html(lang_html);
-                $("#language_id_on_main").html(main_lang_html);
+                $('#surah_id').html(html);
+
+                var last_part = $(location).attr("href").split('/').pop();
+                var x = "1.7";
+                if (last_part != 1) {
+                    x = sessionStorage.getItem("current_surah_number") + "." + sessionStorage.getItem("current_surah_total_ayah");
+                }
+                $("#surah_id").val(x);
+                fill_ayah_number(x.split('.')[1]);
+
+                var x = $("#surah_id option:selected").html().split('.')[0];
+                sessionStorage.setItem("current_surah_number", x);
             }
         });
     }
 
-    function get_surah_audio_vocal() {
-        $.ajax({
-            url: "{{ url_for('get_surah_audio') }}",
-            type: 'POST',
-            success: function (data) {
-                let audio_html = '<option></option>';
+    function fill_ayah_number(total_ayah) {
+        $('.surah_ayah_opt').remove();
+        var html = "";
+        for (var x = 1; x <= total_ayah; x++) {
+            html += '<option class="surah_ayah_opt" value="' + x + '" style="font-size: 28px;">' +
+                x + '</option>';
+        }
+        $('#ayah_number_id').html(html);
+    }
 
-                for ([key, value] of Object.entries(data)) {
-                    for (item of value) {
-                        var quran_audio = sessionStorage.getItem("audio_vocal");
-                        if (item === quran_audio) {
-                            audio_html += '<option selected>' + item + '</option>'
-                        } else {
-                            if (item === "Alafasy") {
-                                audio_html += '<option selected>' + item + '</option>'
-                            } else {
-                                audio_html += '<option>' + item + '</option>'
-                            }
+    function fill_language() {
+        $.ajax({
+            url: "{{ url_for('fill_trans_language') }}",
+            type: 'GET',
+            success: function (data) {
+                $('.trans_language_opt').remove();
+                var html = "";
+                var html1 = "'<option selected>Select Language</option>'";
+
+                for ([key, value] of Object.entries(data[0])) {
+                    if (key != "Arabic") {
+                        for (item in value) {
+                            html += '<option class="trans_language_opt" value="' + value[item].file_name + '" style="font-size: 28px;">' +
+                                value[item].transelator_en_name + '</option>';
                         }
+                        html1 += '<optgroup label="' + key + '">' + html + '</optgroup>'
+                        html = "";
                     }
                 }
-                $('#audio_select_id').html(audio_html);
+                $('#trans_language_id').html(html1);
+
+                var x = sessionStorage.getItem("trans_language");
+                $("#surah_id").val(x);
             }
         });
-    }
-
-    function language_select(selected_lang) {
-        var lang = selected_lang.value;
-
-        sessionStorage.setItem("lang", lang);
-        $.ajax({
-            url: "{{ url_for('get_translator') }}",
-            type: 'GET',
-            data: {"lang": lang},
-            success: function (data) {
-                let html = '';
-                for (let i = 0; i < data.length; i++) {
-                    html += '<option>' + data[i] + '</option>';
-                }
-                $('#language_translator_id').html(html).change()
-            }
-        })
-    }
-
-    function translator_select(transalator) {
-        var traslator_name = transalator.value;
-        var ar_name = sessionStorage.getItem("ar_name");
-        sessionStorage.setItem("traslator_name", traslator_name);
-        $('trans_div').remove();
-        $.ajax({
-            url: "/surah/{{sample_surah[0].surah_number}}/" + ar_name + "/" + traslator_name,
-            type: 'GET',
-            success: function (data) {
-                for ([key, value] of Object.entries(data)) {
-                    let i = 1 + parseInt(key);
-                    $('#ayah_div_' + i).after('<div id="trans_div_'+i+'" style="margin: 5px; color: darkgreen;"><p id="translated_p"' +
-                        'style="float: right; direction: ltr;border: none; font-size: x-large; padding: 7px; text-align: right;">' +
-                        value + '</p></div>');
-                }
-            }
-        })
-    }
-
-    function ar_language_select(ar_name) {
-        var arname = ar_name.value;
-        if (arname !== "") {
-            sessionStorage.setItem("ar_name", arname);
-            window.open('/surah/{{sample_surah[0].surah_number}}/' + arname, '_self');
-        } else {
-            sessionStorage.setItem("ar_name", "Uthamani");
-            window.open('/surah/' + surah_number, '_self');
-        }
-    }
-
-    function audio_select(selected_audio) {
-        var selectedAudio = selected_audio.value;
-        sessionStorage.setItem("audio_vocal", selectedAudio);
-        var ayah_number = sessionStorage.getItem("ayah_number");
-        get_audio(selectedAudio);
-    }
-
-    function get_audio(selectedAudio = "Alafasy") {
-        $("#surah_ayah_audio_div_id audio").remove();
-        $.ajax({
-            url: '/audio/{{sample_surah[0].surah_number}}/' + selectedAudio,
-            type: 'GET',
-            success: function (data) {
-                for ([key, value] of Object.entries(data)) {
-                    let i = 1 + parseInt(key);
-                    $('#ayah_div_' + i).after('<div id="surah_ayah_audio_div_id">' +
-                        '<audio controls style="">' +
-                        '<source src="https://cdn.islamic.network/quran/audio/64/' + key + '/' + value[i - 1] + '.mp3" type="audio/mpeg">' +
-                        '</audio></div>');
-                }
-            }
-        });
-    }
-
-    function change_url(url) {
-        if (window.history.replaceState) {
-            //prevents browser from storing history with each change
-            window.history.replaceState('', '', url);
-        }
-    }
-
-    function set_query_param(name, value) {
-        const url = location.href;
-        var re = new RegExp("([?&])" + name + "=.*?(&|$)", "i");
-        var separator = url.indexOf('?') !== -1 ? "&" : "?";
-        if (url.match(re)) {
-            return url.replace(re, '$1' + name + "=" + value + '$2');
-        } else {
-            return url + separator + name + "=" + value;
-        }
     }
 
     function openNav() {
@@ -497,61 +338,6 @@
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.body.style.backgroundColor = "#e5e5e5";
-    }
-
-    top_btn = document.getElementById("top_scrolling_button");
-    window.onscroll = function () {
-        on_scroll_show_btn_Function();
-    };
-
-    function on_scroll_show_btn_Function() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 20) {
-            (top_btn).style.display = "block";
-        } else {
-            (top_btn).style.display = "none";
-        }
-    }
-
-    function scrollingToTopFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-
-    function get_surah() {
-        var surah = $("#surah_id option:selected").html();
-        sessionStorage.setItem("surah", surah);
-
-        var ar_name = sessionStorage.getItem("ar_name");
-        if (ar_name) {
-            sessionStorage.setItem("ar_name", ar_name);
-            window.open('/surah/' + surah.split(".")[0], '_self');
-        } else {
-            sessionStorage.setItem("ar_name", "Uthamani");
-            window.open('/surah/' + surah[0], '_self');
-        }
-    }
-
-    function get_ayah(ayah_number) {
-        var ayah_num = ayah_number.value;
-        sessionStorage.setItem("ayah_number", ayah_num);
-        selectedAudio = sessionStorage.getItem("audio_vocal");
-        if (selectedAudio) {
-            get_audio(selectedAudio);
-        } else {
-            get_audio()
-        }
-        var elmnt = $('#ayah_' + ayah_num).find('div');
-        scroll_to(document.documentElement, elmnt)
-    }
-
-    function scroll_to(scroll_container, scroll_to_elem, animate_delay = 5, offset = 0) {
-        const $container = $(scroll_container);
-        const $scrollTo = $(scroll_to_elem);
-        if ($scrollTo.length) {
-            $container.animate({
-                scrollTop: ($scrollTo.offset().top - $container.offset().top + $container.scrollTop()) + (offset)
-            }, animate_delay)
-        }
     }
 
     function ayahSearchFunction() {
@@ -573,7 +359,77 @@
         }
     }
 
+    function get_surah(e) {
+        var surah = e.value;
+        sessionStorage.setItem("current_surah_number", surah.split('.')[0]);
+        sessionStorage.setItem("current_surah_total_ayah", surah.split('.')[1]);
+        fill_ayah_number(parseInt(surah.split('.')[1]));
+
+        $.ajax({
+            url: "{{ url_for('get_surah_ar') }}",
+            data: {"surah_number": parseInt(sessionStorage.getItem("current_surah_number"))},
+            type: 'GET',
+            success: function (data) {
+                data = JSON.parse(data);
+
+                $('.ayah_tr_class').remove();
+                var html = "";
+
+                $('th').remove();
+
+                $('thead').html('<tr><th style="padding: 40px;">' +
+                    surah.split('.')[0] + '. ' + data[0].surah_ar_name +
+                    '<br>' + data['0'].surah_en_name + '( ' + data[0].surah_en_name_translation + ' )' +
+                    '( ' + data.length + ' ) ' + ' <br> ' + data[0].revelation_type + '</th></tr>');
+
+                for ([key, value] of Object.entries(data)) {
+                    var x = parseInt(key) + 1;
+
+                    html += '<tr class="ayah_tr_class">' +
+                        '<td class="ayah_td" style="padding: 40px">' +
+                        '<div class="ayah_div_' + x + '"> ' + x + ' .' + value['text'] +
+                        '&#1758;</span></div></td></tr>';
+                }
+                $('#bismi_auzu_tr_id').after(html);
+                get_trans_language();
+            }
+        });
+
+    }
+
+    function get_ayah(ayah_number) {
+        var ayah_num = (parseInt(ayah_number.value) - 1).toString();
+        if (ayah_num != "0") {
+            var elmnt = $('.ayah_div_' + ayah_num);
+            scroll_to(elmnt)
+        }
+    }
+
+    function scroll_to(scroll_to_elem, animate_delay = 5, offset = 0) {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: scroll_to_elem.offset().top
+        }, 200);
+    }
+
+    function get_trans_language() {
+        $.ajax({
+            url: "{{ url_for('get_surah_trans') }}",
+            data: {
+                "file_name": $('#trans_language_id option:selected')[0].value,
+                "surah_number": sessionStorage.getItem("current_surah_number")
+            },
+            type: 'GET',
+            success: function (data) {
+                data = JSON.parse(data);
+
+                for ([key, value] of Object.entries(data)) {
+                    var x = parseInt(key) + 1;
+                    $('.ayah_div_' + x).after('<div class="trans_ayah_div' + x + '" style="font-size: 28px;">' +
+                        value['text'] + '</div>');
+                }
+            }
+        });
+    }
+
 
 </script>
-
-

@@ -3,168 +3,87 @@
 <head>
     <title>Islam</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!-- older-->
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" media="all" href="{{ url_for('static', filename='css/main.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
-    <link type="text/css" rel="stylesheet"
-          href="{{ url_for('static', filename='css/fontawesome.css') }}">
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/select2.min.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.css') }}">
 
 
     <script rel="script" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
     <script rel="script" src="{{ url_for('static', filename='js/fontawesome.js') }}"></script>
     <script rel="script" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-    <script rel="script" src="{{ url_for('static', filename='js/select2.min.js') }}"></script>
-    <script rel="script" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
     <!--end older-->
 
-    <!--[if lt IE 9]><script src="{{ url_for('static',filename='indexjs/html5.js')}}"></script><![endif]-->
+    <!--[if lt IE 9]-->
+    <script src="{{ url_for('static',filename='index/js/html5.js') }}"></script>
+    <!--[endif]-->
     <link rel="stylesheet" media="all" href="{{ url_for('static',filename='index/css/style.css') }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- JS -->
-    <script src="{{ url_for('static',filename='js/jquery-3.4.1.min.js') }}"></script>
-    <script src="{{ url_for('static',filename='index/js/css3-mediaqueries.js') }}"></script>
-    <script src="{{ url_for('static',filename='index/js/custom.js') }}"></script>
-    <script src="{{ url_for('static',filename='index/js/tabs.js') }}"></script>
 
-    <!-- Tweet -->
-    <link rel="stylesheet" href="{{ url_for('static',filename='index/css/jquery.tweet.css') }}" media="all">
-    <!-- ENDS Tweet -->
+
     <!-- superfish -->
     <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='index/css/superfish.css') }}">
-    <script src="{{ url_for('static',filename='index/js/superfish-1.4.8/js/hoverIntent.js') }}"></script>
-    <script src="{{ url_for('static',filename='index/js/superfish-1.4.8/js/superfish.js') }}"></script>
-    <script src="{{ url_for('static',filename='index/js/superfish-1.4.8/js/supersubs.js') }}"></script>
     <!-- ENDS superfish -->
-    <!-- prettyPhoto -->
-    <script src="{{ url_for('static',filename='index/js/prettyPhoto/js/jquery.prettyPhoto.js') }}"></script>
-    <link rel="stylesheet" href="{{ url_for('static',filename='index/js/prettyPhoto/css/prettyPhoto.css') }}"
-          media="screen">
-    <!-- ENDS prettyPhoto -->
-    <!-- poshytip -->
-    <link rel="stylesheet"
-          href="{{ url_for('static',filename='index/js/poshytip-1.1/src/tip-twitter/tip-twitter.css') }}">
-    <link rel="stylesheet"
-          href="{{ url_for('static',filename='index/js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css') }}">
-    <script src="{{ url_for('static',filename='index/js/poshytip-1.1/src/jquery.poshytip.min.js') }}"></script>
-    <!-- ENDS poshytip -->
-    <!-- GOOGLE FONTS -->
-    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'>
-    <!-- Flex Slider -->
-    <link rel="stylesheet" href="{{ url_for('static',filename='index/css/flexslider.css') }}">
-    <script src="{{ url_for('static',filename='index/js/jquery.flexslider-min.js') }}"></script>
-    <!-- ENDS Flex Slider -->
+
     <!-- Less framework -->
     <link rel="stylesheet" media="all" href="{{ url_for('static',filename='index/css/lessframework.css') }}">
-    <!-- modernizr -->
-    <script src="{{ url_for('static',filename='index/js/modernizr.js') }}"></script>
+
     <!-- SKIN -->
     <link rel="stylesheet" media="all" href="{{ url_for('static',filename='index/css/skin.css') }}">
+    <style>
+
+    </style>
 </head>
 <body>
 <header class="clearfix">
-    <!-- top widget -->
-    <div id="top-widget-holder">
-        <div class="wrapper">
-            <div id="top-widget">
-                <div class="padding">
-                    <ul class="widget-cols clearfix">
-                        <li class="first-col">
-                            <div class="widget-block">
-                                <h4>Recent posts</h4>
-                                <div class="recent-post"><img
-                                        src="{{ url_for('static',filename='images/books.jpg') }}"
-                                        style="background-color:white; width: 54px; height: 54px;">
-                                    <div class="post-head"><a
-                                            href="{{ url_for('quran') }}">Books</a><span>last updated: March 12, 2011</span>
-                                    </div>
-                                </div>
-                                <div class="recent-post"><a href="#" class="thumb">
-                                    <img src="{{ url_for('static',filename='index/img/dummies/54x54.gif') }}"
-                                         alt=""></a>
-                                    <div class="post-head"><a href="#">Pellentesque habitant morbi
-                                        senectus</a><span> March 12, 2011</span>
-                                    </div>
-                                </div>
-                                <div class="recent-post"><a href="#" class="thumb"><img
-                                        src="{{ url_for('static',filename='index/img/dummies/54x54.gif') }}" alt=""></a>
-                                    <div class="post-head"><a href="#">Pellentesque habitant morbi
-                                        senectus</a><span> March 12, 2011</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="second-col">
-                            <div class="widget-block">
-                                <h4>Dummy text</h4>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                                    turpis
-                                    egestas. Vestibulum tortor quam, feugiat vitae, ultricies ege. Aenean ultricies
-                                    mi
-                                    vitae est. Mauris placerat eleifend leo.</p>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
-                            </div>
-                        </li>
-                        <li class="third-col">
-                            <div class="widget-block">
-                                <h4>Dummy text</h4>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                                    turpis
-                                    egestas. Vestibulum tortor quam, feugiat vitae, ultricies ege. Aenean ultricies
-                                    mi
-                                    vitae est. Mauris placerat eleifend leo.</p>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
-                            </div>
-                        </li>
-                        <li class="fourth-col">
-                            <div class="widget-block">
-                                <h4>Dummy text</h4>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                                    turpis
-                                    egestas. Vestibulum tortor quam, feugiat vitae, ultricies ege. Aenean ultricies
-                                    mi
-                                    vitae est. Mauris placerat eleifend leo.</p>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <a href="#" id="top-open">Menu</a></div>
-    <!-- ENDS top-widget -->
     <div class="wrapper clearfix" style="height: 43px; float: left;">
+        <span id="nav_span" onclick="openNav()">&#9776;</span>
+
         <nav style="float: left; margin: 13px 13px 0 40px;">
             <ul id="nav" class="sf-menu">
                 <li><a href="{{ url_for('home') }}" style="">Home</a></li>
-                <li class="current-menu-item"><a href="{{ url_for('quran') }}">Quran</a>
-                    <ul>
-                        <li><a href="{{ url_for("surah", surah_number= 1) }}">Surah</a></li>
-                    </ul>
-                </li>
+                <li class="current-menu-item"><a href="{{ url_for('quran') }}">Quran</a></li>
+                <li><a href="{{ url_for('surah', surah_number=1) }}">Surah</a></li>
             </ul>
-            <div id="combo-holder">
-            </div>
         </nav>
-
     </div>
+
+    <div id="mySidenav" class="sidenav clearfix">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="{{ url_for('home') }}" style="">Home</a>
+        <a href="{{ url_for('quran') }}">Quran</a>
+        <a href="{{ url_for('surah', surah_number=1) }}">Surah</a>
+    </div>
+
 </header>
 <!-- MAIN -->
 <div id="main">
-    <button class="round_button" id="top_scrolling_button"
-            style="display: none; color: black; left: 2px; bottom: 19px;"
-            onclick="scrollingToTopFunction()" title="Top">▲
-    </button>
     <div class="wrapper">
         <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
-                 style="padding: 0; height: 28px; float: right;">
+
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"
+                 style="padding: 0 15px; height: 28px; float: left;">
                 <form action="" autocomplete="off">
                     <input id="surah_search_Input" name="search" type="text" onkeyup="surahSearchFunction()"
                            placeholder="Search for surah...">
                     <input value="Rechercher" type="submit">
                 </form>
             </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="float: right;">
+                <select class="form-control" id="quran_sort_id"
+                        onchange="get_selected_quran_sort(this);">
+                    <option value="-1">Sort by</option>
+                    <option value="0">Traditional Order</option>
+                    <option value="1">According To Revelation</option>
+                    <option value="2">Desc Surah Name</option>
+                    <option value="3">Desc Surah Total Ayah</option>
+                    <option value="4">Asc Surah Total Ayah</option>
+                    <option value="5">Meccan Surah</option>
+                    <option value="7">Medinan Surah</option>
+                </select>
+            </div>
+
         </div>
         <!-- slider holder -->
         <div id="slider-holder" class="clearfix">
@@ -172,25 +91,14 @@
                 <!-- slider -->
                 <div style="background: white;">
                     <div>
-                        <table id="quran_table" class="table" style="margin-left: 7px;">
+                        <table id="quran_table" class="table">
                             <thead>
                             <tr>
                                 <th colspan="2" style="padding: 7px; font-size: 32px;">Surah</th>
                             </tr>
                             </thead>
-                            <tbody>
-                            {% for item in sample_quran %}
-                                <tr class="sample_surah_info_tr" style="font-size: 28px;">
-                                    <td onclick="get_surah('{{ item.surah_number }}');">
-                                        {{ item.surah_number }} . {{ item.surah_ar_name }}
-                                        <br>
-                                        {{ item.surah_en_name }} ( {{ item.surah_en_name_translation }} )
-                                        ( {{ item.total_ayah }} )
-                                        <br>
-                                        {{ item.revelation_type }}
-                                    </td>
-                                </tr>
-                            {% endfor %}
+                            <tbody id="quran_tbody">
+
                             </tbody>
                         </table>
                     </div>
@@ -208,37 +116,57 @@
 </body>
 </html>
 
-<script rel="script" src="{{ url_for('static', filename='js/main.js') }}"></script>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/select2.min.css') }}">
+<script rel="script" src="{{ url_for('static', filename='js/select2.min.js') }}"></script>
 
 <script rel="script">
-    function get_surah(surah_number) {
-        var ar_name = sessionStorage.getItem("ar_name");
-        if (ar_name) {
-            sessionStorage.setItem("ar_name", ar_name);
-            window.open('/surah/' + surah_number, '_self');
+    $(document).ready(function (e) {
+        var quran_sort_id = sessionStorage.getItem("quran_sort_id");
+
+        if (quran_sort_id) {
+            $('#quran_sort_id').val(quran_sort_id);
+
         } else {
-            sessionStorage.setItem("ar_name", "Uthamani");
-            window.open('/surah/' + surah_number, '_self');
+            $('#quran_sort_id').val("0");
+            sessionStorage.setItem("quran_sort_id", "0");
         }
+
+        var x = $("#quran_sort_id option:selected").html();
+
+        $.ajax({
+            url: "{{ url_for('get_quran_by_sort') }}",
+            type: 'GET',
+            data: {sort_by: x},
+            success: function (data) {
+                $('.sample_surah_info_tr').remove();
+                var html = "";
+                for ([key, value] of Object.entries(data)) {
+                    html += '<tr class="sample_surah_info_tr" style="font-size: 28px;">' +
+                        '<td onclick="get_surah(' + value.surah_number + ',' + value.total_ayah + ');">' + value.surah_number + '. ' + value.surah_ar_name +
+                        '<br>' + value.surah_en_name + '( ' + value.surah_en_name_translation + ' )' + '( ' + value.total_ayah + ' )' +
+                        '<br>' + value.revelation_type + '<br><span style="color: red;">' + value.note + '</span></td></tr>';
+                }
+                $('#quran_tbody').html(html);
+            }
+        });
+
+        $("#quran_sort_id").select2();
+    });
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "178px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
 
-    top_btn = document.getElementById("top_scrolling_button");
-    window.onscroll = function () {
-        on_scroll_show_btn_Function();
-    };
-
-    function on_scroll_show_btn_Function() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 20) {
-            (top_btn).style.display = "block";
-        } else {
-            (top_btn).style.display = "none";
-        }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "#e5e5e5";
     }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function scrollingToTopFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+    function get_surah(surah_number, surah_total_ayah) {
+        sessionStorage.setItem("current_surah_number", surah_number);
+        sessionStorage.setItem("current_surah_total_ayah", surah_total_ayah);
+        window.open('/surah/' + surah_number, '_self');
     }
 
     function surahSearchFunction() {
@@ -260,5 +188,29 @@
         }
     }
 
+    function get_selected_quran_sort(sel_val) {
+        var sel_value = sel_val.value;
+        sessionStorage.setItem("quran_sort_id", sel_value);
+        $('#quran_sort_id').val(sel_value);
+
+        var x = $("#quran_sort_id option:selected").html();
+
+        $.ajax({
+            url: "{{ url_for('get_quran_by_sort') }}",
+            type: 'GET',
+            data: {sort_by: x},
+            success: function (data) {
+                $('.sample_surah_info_tr').remove();
+                var html = "";
+                for ([key, value] of Object.entries(data)) {
+                    html += '<tr class="sample_surah_info_tr" style="font-size: 28px;">' +
+                        '<td onclick="get_surah(' + value.surah_number + ');">' + value.surah_number + '. ' + value.surah_ar_name +
+                        '<br>' + value.surah_en_name + '( ' + value.surah_en_name_translation + ' )' + '( ' + value.total_ayah + ' )' +
+                        '<br>' + value.revelation_type + '</td></tr>';
+                }
+                $('#quran_tbody').html(html);
+            }
+        });
+    }
 </script>
 
