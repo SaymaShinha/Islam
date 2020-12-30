@@ -1,0 +1,1028 @@
+[
+  {
+    "id": 1,
+    "surah_number": 1,
+    "surah_ar_name": "سُورَةُ ٱلْفَاتِحَةِ",
+    "surah_en_name": "Al-Faatiha",
+    "surah_en_name_translation": "The Opening",
+    "revelation_type": "Meccan",
+    "total_ayah": 7
+  },
+  {
+    "id": 2,
+    "surah_number": 2,
+    "surah_ar_name": "سورة البقرة",
+    "surah_en_name": "Al-Baqara",
+    "surah_en_name_translation": "The Cow",
+    "revelation_type": "Medinan",
+    "total_ayah": 286
+  },
+  {
+    "id": 3,
+    "surah_number": 3,
+    "surah_ar_name": "سورة آل عمران",
+    "surah_en_name": "Aal-i-Imraan",
+    "surah_en_name_translation": "The Family of Imraan",
+    "revelation_type": "Medinan",
+    "total_ayah": 200
+  },
+  {
+    "id": 4,
+    "surah_number": 4,
+    "surah_ar_name": "سورة النساء",
+    "surah_en_name": "An-Nisaa",
+    "surah_en_name_translation": "The Women",
+    "revelation_type": "Medinan",
+    "total_ayah": 176
+  },
+  {
+    "id": 5,
+    "surah_number": 5,
+    "surah_ar_name": "سورة المائدة",
+    "surah_en_name": "Al-Maaida",
+    "surah_en_name_translation": "The Table",
+    "revelation_type": "Medinan",
+    "total_ayah": 120
+  },
+  {
+    "id": 6,
+    "surah_number": 6,
+    "surah_ar_name": "سورة الأنعام",
+    "surah_en_name": "Al-An'aam",
+    "surah_en_name_translation": "The Cattle",
+    "revelation_type": "Meccan",
+    "total_ayah": 165
+  },
+  {
+    "id": 7,
+    "surah_number": 7,
+    "surah_ar_name": "سورة الأعراف",
+    "surah_en_name": "Al-A'raaf",
+    "surah_en_name_translation": "The Heights",
+    "revelation_type": "Meccan",
+    "total_ayah": 206
+  },
+  {
+    "id": 8,
+    "surah_number": 8,
+    "surah_ar_name": "سورة الأنفال",
+    "surah_en_name": "Al-Anfaal",
+    "surah_en_name_translation": "The Spoils of War",
+    "revelation_type": "Medinan",
+    "total_ayah": 75
+  },
+  {
+    "id": 9,
+    "surah_number": 9,
+    "surah_ar_name": "سورة التوبة",
+    "surah_en_name": "At-Tawba",
+    "surah_en_name_translation": "The Repentance",
+    "revelation_type": "Medinan",
+    "total_ayah": 129
+  },
+  {
+    "id": 10,
+    "surah_number": 10,
+    "surah_ar_name": "سورة يونس",
+    "surah_en_name": "Yunus",
+    "surah_en_name_translation": "Jonas",
+    "revelation_type": "Meccan",
+    "total_ayah": 109
+  },
+  {
+    "id": 11,
+    "surah_number": 11,
+    "surah_ar_name": "سورة هود",
+    "surah_en_name": "Hud",
+    "surah_en_name_translation": "Hud",
+    "revelation_type": "Meccan",
+    "total_ayah": 123
+  },
+  {
+    "id": 12,
+    "surah_number": 12,
+    "surah_ar_name": "سورة يوسف",
+    "surah_en_name": "Yusuf",
+    "surah_en_name_translation": "Joseph",
+    "revelation_type": "Meccan",
+    "total_ayah": 111
+  },
+  {
+    "id": 13,
+    "surah_number": 13,
+    "surah_ar_name": "سورة الرعد",
+    "surah_en_name": "Ar-Ra'd",
+    "surah_en_name_translation": "The Thunder",
+    "revelation_type": "Medinan",
+    "total_ayah": 43
+  },
+  {
+    "id": 14,
+    "surah_number": 14,
+    "surah_ar_name": "سورة ابراهيم",
+    "surah_en_name": "Ibrahim",
+    "surah_en_name_translation": "Abraham",
+    "revelation_type": "Meccan",
+    "total_ayah": 52
+  },
+  {
+    "id": 15,
+    "surah_number": 15,
+    "surah_ar_name": "سورة الحجر",
+    "surah_en_name": "Al-Hijr",
+    "surah_en_name_translation": "The Rock",
+    "revelation_type": "Meccan",
+    "total_ayah": 99
+  },
+  {
+    "id": 16,
+    "surah_number": 16,
+    "surah_ar_name": "سورة النحل",
+    "surah_en_name": "An-Nahl",
+    "surah_en_name_translation": "The Bee",
+    "revelation_type": "Meccan",
+    "total_ayah": 128
+  },
+  {
+    "id": 17,
+    "surah_number": 17,
+    "surah_ar_name": "سورة الإسراء",
+    "surah_en_name": "Al-Israa",
+    "surah_en_name_translation": "The Night Journey",
+    "revelation_type": "Meccan",
+    "total_ayah": 111
+  },
+  {
+    "id": 18,
+    "surah_number": 18,
+    "surah_ar_name": "سورة الكهف",
+    "surah_en_name": "Al-Kahf",
+    "surah_en_name_translation": "The Cave",
+    "revelation_type": "Meccan",
+    "total_ayah": 110
+  },
+  {
+    "id": 19,
+    "surah_number": 19,
+    "surah_ar_name": "سورة مريم",
+    "surah_en_name": "Maryam",
+    "surah_en_name_translation": "Mary",
+    "revelation_type": "Meccan",
+    "total_ayah": 98
+  },
+  {
+    "id": 20,
+    "surah_number": 20,
+    "surah_ar_name": "سورة طه",
+    "surah_en_name": "Taa-Haa",
+    "surah_en_name_translation": "Taa-Haa",
+    "revelation_type": "Meccan",
+    "total_ayah": 135
+  },
+  {
+    "id": 21,
+    "surah_number": 21,
+    "surah_ar_name": "سورة الأنبياء",
+    "surah_en_name": "Al-Anbiyaa",
+    "surah_en_name_translation": "The Prophets",
+    "revelation_type": "Meccan",
+    "total_ayah": 112
+  },
+  {
+    "id": 22,
+    "surah_number": 22,
+    "surah_ar_name": "سورة الحج",
+    "surah_en_name": "Al-Hajj",
+    "surah_en_name_translation": "The Pilgrimage",
+    "revelation_type": "Medinan",
+    "total_ayah": 78
+  },
+  {
+    "id": 23,
+    "surah_number": 23,
+    "surah_ar_name": "سورة المؤمنون",
+    "surah_en_name": "Al-Muminoon",
+    "surah_en_name_translation": "The Believers",
+    "revelation_type": "Meccan",
+    "total_ayah": 118
+  },
+  {
+    "id": 24,
+    "surah_number": 24,
+    "surah_ar_name": "سورة النور",
+    "surah_en_name": "An-Noor",
+    "surah_en_name_translation": "The Light",
+    "revelation_type": "Medinan",
+    "total_ayah": 64
+  },
+  {
+    "id": 25,
+    "surah_number": 25,
+    "surah_ar_name": "سورة الفرقان",
+    "surah_en_name": "Al-Furqaan",
+    "surah_en_name_translation": "The Criterion",
+    "revelation_type": "Meccan",
+    "total_ayah": 77
+  },
+  {
+    "id": 26,
+    "surah_number": 26,
+    "surah_ar_name": "سورة الشعراء",
+    "surah_en_name": "Ash-Shu'araa",
+    "surah_en_name_translation": "The Poets",
+    "revelation_type": "Meccan",
+    "total_ayah": 227
+  },
+  {
+    "id": 27,
+    "surah_number": 27,
+    "surah_ar_name": "سورة النمل",
+    "surah_en_name": "An-Naml",
+    "surah_en_name_translation": "The Ant",
+    "revelation_type": "Meccan",
+    "total_ayah": 93
+  },
+  {
+    "id": 28,
+    "surah_number": 28,
+    "surah_ar_name": "سورة القصص",
+    "surah_en_name": "Al-Qasas",
+    "surah_en_name_translation": "The Stories",
+    "revelation_type": "Meccan",
+    "total_ayah": 88
+  },
+  {
+    "id": 29,
+    "surah_number": 29,
+    "surah_ar_name": "سورة العنكبوت",
+    "surah_en_name": "Al-Ankaboot",
+    "surah_en_name_translation": "The Spider",
+    "revelation_type": "Meccan",
+    "total_ayah": 69
+  },
+  {
+    "id": 30,
+    "surah_number": 30,
+    "surah_ar_name": "سورة الروم",
+    "surah_en_name": "Ar-Room",
+    "surah_en_name_translation": "The Romans",
+    "revelation_type": "Meccan",
+    "total_ayah": 60
+  },
+  {
+    "id": 31,
+    "surah_number": 31,
+    "surah_ar_name": "سورة لقمان",
+    "surah_en_name": "Luqman",
+    "surah_en_name_translation": "Luqman",
+    "revelation_type": "Meccan",
+    "total_ayah": 34
+  },
+  {
+    "id": 32,
+    "surah_number": 32,
+    "surah_ar_name": "سورة السجدة",
+    "surah_en_name": "As-Sajda",
+    "surah_en_name_translation": "The Prostration",
+    "revelation_type": "Meccan",
+    "total_ayah": 30
+  },
+  {
+    "id": 33,
+    "surah_number": 33,
+    "surah_ar_name": "سورة الأحزاب",
+    "surah_en_name": "Al-Ahzaab",
+    "surah_en_name_translation": "The Clans",
+    "revelation_type": "Medinan",
+    "total_ayah": 73
+  },
+  {
+    "id": 34,
+    "surah_number": 34,
+    "surah_ar_name": "سورة سَبَأ",
+    "surah_en_name": "Saba",
+    "surah_en_name_translation": "Sheba",
+    "revelation_type": "Meccan",
+    "total_ayah": 54
+  },
+  {
+    "id": 35,
+    "surah_number": 35,
+    "surah_ar_name": "سورة فاطر",
+    "surah_en_name": "Faatir",
+    "surah_en_name_translation": "The Originator",
+    "revelation_type": "Meccan",
+    "total_ayah": 45
+  },
+  {
+    "id": 36,
+    "surah_number": 36,
+    "surah_ar_name": "سورة يس",
+    "surah_en_name": "Yaseen",
+    "surah_en_name_translation": "Yaseen",
+    "revelation_type": "Meccan",
+    "total_ayah": 83
+  },
+  {
+    "id": 37,
+    "surah_number": 37,
+    "surah_ar_name": "سورة الصافات",
+    "surah_en_name": "As-Saaffaat",
+    "surah_en_name_translation": "Those drawn up in Ranks",
+    "revelation_type": "Meccan",
+    "total_ayah": 182
+  },
+  {
+    "id": 38,
+    "surah_number": 38,
+    "surah_ar_name": "سورة ص",
+    "surah_en_name": "Saad",
+    "surah_en_name_translation": "The letter Saad",
+    "revelation_type": "Meccan",
+    "total_ayah": 88
+  },
+  {
+    "id": 39,
+    "surah_number": 39,
+    "surah_ar_name": "سورة الزمر",
+    "surah_en_name": "Az-Zumar",
+    "surah_en_name_translation": "The Groups",
+    "revelation_type": "Meccan",
+    "total_ayah": 75
+  },
+  {
+    "id": 40,
+    "surah_number": 40,
+    "surah_ar_name": "سورة غافر",
+    "surah_en_name": "Ghafir",
+    "surah_en_name_translation": "The Forgiver",
+    "revelation_type": "Meccan",
+    "total_ayah": 85
+  },
+  {
+    "id": 41,
+    "surah_number": 41,
+    "surah_ar_name": "سورة فصلت",
+    "surah_en_name": "Fussilat",
+    "surah_en_name_translation": "Explained in detail",
+    "revelation_type": "Meccan",
+    "total_ayah": 54
+  },
+  {
+    "id": 42,
+    "surah_number": 42,
+    "surah_ar_name": "سورة الشورى",
+    "surah_en_name": "Ash-Shura",
+    "surah_en_name_translation": "Consultation",
+    "revelation_type": "Meccan",
+    "total_ayah": 53
+  },
+  {
+    "id": 43,
+    "surah_number": 43,
+    "surah_ar_name": "سورة الزخرف",
+    "surah_en_name": "Az-Zukhruf",
+    "surah_en_name_translation": "Ornaments of gold",
+    "revelation_type": "Meccan",
+    "total_ayah": 89
+  },
+  {
+    "id": 44,
+    "surah_number": 44,
+    "surah_ar_name": "سورة الدخان",
+    "surah_en_name": "Ad-Dukhaan",
+    "surah_en_name_translation": "The Smoke",
+    "revelation_type": "Meccan",
+    "total_ayah": 59
+  },
+  {
+    "id": 45,
+    "surah_number": 45,
+    "surah_ar_name": "سورة الجاثية",
+    "surah_en_name": "Al-Jaathiya",
+    "surah_en_name_translation": "Crouching",
+    "revelation_type": "Meccan",
+    "total_ayah": 37
+  },
+  {
+    "id": 46,
+    "surah_number": 46,
+    "surah_ar_name": "سورة الأحقاف",
+    "surah_en_name": "Al-Ahqaf",
+    "surah_en_name_translation": "The Dunes",
+    "revelation_type": "Meccan",
+    "total_ayah": 35
+  },
+  {
+    "id": 47,
+    "surah_number": 47,
+    "surah_ar_name": "سورة محمد",
+    "surah_en_name": "Muhammad",
+    "surah_en_name_translation": "Muhammad",
+    "revelation_type": "Medinan",
+    "total_ayah": 38
+  },
+  {
+    "id": 48,
+    "surah_number": 48,
+    "surah_ar_name": "سورة الفتح",
+    "surah_en_name": "Al-Fath",
+    "surah_en_name_translation": "The Victory",
+    "revelation_type": "Medinan",
+    "total_ayah": 29
+  },
+  {
+    "id": 49,
+    "surah_number": 49,
+    "surah_ar_name": "سورة الحجرات",
+    "surah_en_name": "Al-Hujuraat",
+    "surah_en_name_translation": "The Inner Apartments",
+    "revelation_type": "Medinan",
+    "total_ayah": 18
+  },
+  {
+    "id": 50,
+    "surah_number": 50,
+    "surah_ar_name": "سورة ق",
+    "surah_en_name": "Qaaf",
+    "surah_en_name_translation": "The letter Qaaf",
+    "revelation_type": "Meccan",
+    "total_ayah": 45
+  },
+  {
+    "id": 51,
+    "surah_number": 51,
+    "surah_ar_name": "سورة الذاريات",
+    "surah_en_name": "Adh-Dhaariyat",
+    "surah_en_name_translation": "The Winnowing Winds",
+    "revelation_type": "Meccan",
+    "total_ayah": 60
+  },
+  {
+    "id": 52,
+    "surah_number": 52,
+    "surah_ar_name": "سورة الطور",
+    "surah_en_name": "At-Tur",
+    "surah_en_name_translation": "The Mount",
+    "revelation_type": "Meccan",
+    "total_ayah": 49
+  },
+  {
+    "id": 53,
+    "surah_number": 53,
+    "surah_ar_name": "سورة النجم",
+    "surah_en_name": "An-Najm",
+    "surah_en_name_translation": "The Star",
+    "revelation_type": "Meccan",
+    "total_ayah": 62
+  },
+  {
+    "id": 54,
+    "surah_number": 54,
+    "surah_ar_name": "سورة القمر",
+    "surah_en_name": "Al-Qamar",
+    "surah_en_name_translation": "The Moon",
+    "revelation_type": "Meccan",
+    "total_ayah": 55
+  },
+  {
+    "id": 55,
+    "surah_number": 55,
+    "surah_ar_name": "سورة الرحمن",
+    "surah_en_name": "Ar-Rahmaan",
+    "surah_en_name_translation": "The Beneficent",
+    "revelation_type": "Medinan",
+    "total_ayah": 78
+  },
+  {
+    "id": 56,
+    "surah_number": 56,
+    "surah_ar_name": "سورة الواقعة",
+    "surah_en_name": "Al-Waaqia",
+    "surah_en_name_translation": "The Inevitable",
+    "revelation_type": "Meccan",
+    "total_ayah": 96
+  },
+  {
+    "id": 57,
+    "surah_number": 57,
+    "surah_ar_name": "سورة الحديد",
+    "surah_en_name": "Al-Hadid",
+    "surah_en_name_translation": "The Iron",
+    "revelation_type": "Medinan",
+    "total_ayah": 29
+  },
+  {
+    "id": 58,
+    "surah_number": 58,
+    "surah_ar_name": "سورة المجادلة",
+    "surah_en_name": "Al-Mujaadila",
+    "surah_en_name_translation": "The Pleading Woman",
+    "revelation_type": "Medinan",
+    "total_ayah": 22
+  },
+  {
+    "id": 59,
+    "surah_number": 59,
+    "surah_ar_name": "سورة الحشر",
+    "surah_en_name": "Al-Hashr",
+    "surah_en_name_translation": "The Exile",
+    "revelation_type": "Medinan",
+    "total_ayah": 24
+  },
+  {
+    "id": 60,
+    "surah_number": 60,
+    "surah_ar_name": "سورة الممتحنة",
+    "surah_en_name": "Al-Mumtahana",
+    "surah_en_name_translation": "She that is to be examined",
+    "revelation_type": "Medinan",
+    "total_ayah": 13
+  },
+  {
+    "id": 61,
+    "surah_number": 61,
+    "surah_ar_name": "سورة الصف",
+    "surah_en_name": "As-Saff",
+    "surah_en_name_translation": "The Ranks",
+    "revelation_type": "Medinan",
+    "total_ayah": 14
+  },
+  {
+    "id": 62,
+    "surah_number": 62,
+    "surah_ar_name": "سورة الجمعة",
+    "surah_en_name": "Al-Jumu'a",
+    "surah_en_name_translation": "Friday",
+    "revelation_type": "Medinan",
+    "total_ayah": 11
+  },
+  {
+    "id": 63,
+    "surah_number": 63,
+    "surah_ar_name": "سورة المنافقون",
+    "surah_en_name": "Al-Munaafiqoon",
+    "surah_en_name_translation": "The Hypocrites",
+    "revelation_type": "Medinan",
+    "total_ayah": 11
+  },
+  {
+    "id": 64,
+    "surah_number": 64,
+    "surah_ar_name": "سورة التغابن",
+    "surah_en_name": "At-Taghaabun",
+    "surah_en_name_translation": "Mutual Disillusion",
+    "revelation_type": "Medinan",
+    "total_ayah": 18
+  },
+  {
+    "id": 65,
+    "surah_number": 65,
+    "surah_ar_name": "سورة الطلاق",
+    "surah_en_name": "At-Talaaq",
+    "surah_en_name_translation": "Divorce",
+    "revelation_type": "Medinan",
+    "total_ayah": 12
+  },
+  {
+    "id": 66,
+    "surah_number": 66,
+    "surah_ar_name": "سورة التحريم",
+    "surah_en_name": "At-Tahrim",
+    "surah_en_name_translation": "The Prohibition",
+    "revelation_type": "Medinan",
+    "total_ayah": 12
+  },
+  {
+    "id": 67,
+    "surah_number": 67,
+    "surah_ar_name": "سورة الملك",
+    "surah_en_name": "Al-Mulk",
+    "surah_en_name_translation": "The Sovereignty",
+    "revelation_type": "Meccan",
+    "total_ayah": 30
+  },
+  {
+    "id": 68,
+    "surah_number": 68,
+    "surah_ar_name": "سورة القلم",
+    "surah_en_name": "Al-Qalam",
+    "surah_en_name_translation": "The Pen",
+    "revelation_type": "Meccan",
+    "total_ayah": 52
+  },
+  {
+    "id": 69,
+    "surah_number": 69,
+    "surah_ar_name": "سورة الحاقة",
+    "surah_en_name": "Al-Haaqqa",
+    "surah_en_name_translation": "The Reality",
+    "revelation_type": "Meccan",
+    "total_ayah": 52
+  },
+  {
+    "id": 70,
+    "surah_number": 70,
+    "surah_ar_name": "سورة المعارج",
+    "surah_en_name": "Al-Ma'aarij",
+    "surah_en_name_translation": "The Ascending Stairways",
+    "revelation_type": "Meccan",
+    "total_ayah": 44
+  },
+  {
+    "id": 71,
+    "surah_number": 71,
+    "surah_ar_name": "سورة نوح",
+    "surah_en_name": "Nooh",
+    "surah_en_name_translation": "Noah",
+    "revelation_type": "Meccan",
+    "total_ayah": 28
+  },
+  {
+    "id": 72,
+    "surah_number": 72,
+    "surah_ar_name": "سورة الجن",
+    "surah_en_name": "Al-Jinn",
+    "surah_en_name_translation": "The Jinn",
+    "revelation_type": "Meccan",
+    "total_ayah": 28
+  },
+  {
+    "id": 73,
+    "surah_number": 73,
+    "surah_ar_name": "سورة المزمل",
+    "surah_en_name": "Al-Muzzammil",
+    "surah_en_name_translation": "The Enshrouded One",
+    "revelation_type": "Meccan",
+    "total_ayah": 20
+  },
+  {
+    "id": 74,
+    "surah_number": 74,
+    "surah_ar_name": "سورة المدثر",
+    "surah_en_name": "Al-Muddaththir",
+    "surah_en_name_translation": "The Cloaked One",
+    "revelation_type": "Meccan",
+    "total_ayah": 56
+  },
+  {
+    "id": 75,
+    "surah_number": 75,
+    "surah_ar_name": "سورة القيامة",
+    "surah_en_name": "Al-Qiyaama",
+    "surah_en_name_translation": "The Resurrection",
+    "revelation_type": "Meccan",
+    "total_ayah": 40
+  },
+  {
+    "id": 76,
+    "surah_number": 76,
+    "surah_ar_name": "سورة الانسان",
+    "surah_en_name": "Al-Insaan",
+    "surah_en_name_translation": "Man",
+    "revelation_type": "Medinan",
+    "total_ayah": 31
+  },
+  {
+    "id": 77,
+    "surah_number": 77,
+    "surah_ar_name": "سورة المرسلات",
+    "surah_en_name": "Al-Mursalaat",
+    "surah_en_name_translation": "The Emissaries",
+    "revelation_type": "Meccan",
+    "total_ayah": 50
+  },
+  {
+    "id": 78,
+    "surah_number": 78,
+    "surah_ar_name": "سورة النبأ",
+    "surah_en_name": "An-Naba",
+    "surah_en_name_translation": "The Announcement",
+    "revelation_type": "Meccan",
+    "total_ayah": 40
+  },
+  {
+    "id": 79,
+    "surah_number": 79,
+    "surah_ar_name": "سورة النازعات",
+    "surah_en_name": "An-Naazi'aat",
+    "surah_en_name_translation": "Those who drag forth",
+    "revelation_type": "Meccan",
+    "total_ayah": 46
+  },
+  {
+    "id": 80,
+    "surah_number": 80,
+    "surah_ar_name": "سورة عبس",
+    "surah_en_name": "Abasa",
+    "surah_en_name_translation": "He frowned",
+    "revelation_type": "Meccan",
+    "total_ayah": 42
+  },
+  {
+    "id": 81,
+    "surah_number": 81,
+    "surah_ar_name": "سورة التكوير",
+    "surah_en_name": "At-Takwir",
+    "surah_en_name_translation": "The Overthrowing",
+    "revelation_type": "Meccan",
+    "total_ayah": 29
+  },
+  {
+    "id": 82,
+    "surah_number": 82,
+    "surah_ar_name": "سورة الإنفطار",
+    "surah_en_name": "Al-Infitaar",
+    "surah_en_name_translation": "The Cleaving",
+    "revelation_type": "Meccan",
+    "total_ayah": 19
+  },
+  {
+    "id": 83,
+    "surah_number": 83,
+    "surah_ar_name": "سورة المطففين",
+    "surah_en_name": "Al-Mutaffifin",
+    "surah_en_name_translation": "Defrauding",
+    "revelation_type": "Meccan",
+    "total_ayah": 36
+  },
+  {
+    "id": 84,
+    "surah_number": 84,
+    "surah_ar_name": "سورة الإنشقاق",
+    "surah_en_name": "Al-Inshiqaaq",
+    "surah_en_name_translation": "The Splitting Open",
+    "revelation_type": "Meccan",
+    "total_ayah": 25
+  },
+  {
+    "id": 85,
+    "surah_number": 85,
+    "surah_ar_name": "سورة البروج",
+    "surah_en_name": "Al-Burooj",
+    "surah_en_name_translation": "The Constellations",
+    "revelation_type": "Meccan",
+    "total_ayah": 22
+  },
+  {
+    "id": 86,
+    "surah_number": 86,
+    "surah_ar_name": "سورة الطارق",
+    "surah_en_name": "At-Taariq",
+    "surah_en_name_translation": "The Morning Star",
+    "revelation_type": "Meccan",
+    "total_ayah": 17
+  },
+  {
+    "id": 87,
+    "surah_number": 87,
+    "surah_ar_name": "سورة الأعلى",
+    "surah_en_name": "Al-A'laa",
+    "surah_en_name_translation": "The Most High",
+    "revelation_type": "Meccan",
+    "total_ayah": 19
+  },
+  {
+    "id": 88,
+    "surah_number": 88,
+    "surah_ar_name": "سورة الغاشية",
+    "surah_en_name": "Al-Ghaashiya",
+    "surah_en_name_translation": "The Overwhelming",
+    "revelation_type": "Meccan",
+    "total_ayah": 26
+  },
+  {
+    "id": 89,
+    "surah_number": 89,
+    "surah_ar_name": "سورة الفجر",
+    "surah_en_name": "Al-Fajr",
+    "surah_en_name_translation": "The Dawn",
+    "revelation_type": "Meccan",
+    "total_ayah": 30
+  },
+  {
+    "id": 90,
+    "surah_number": 90,
+    "surah_ar_name": "سورة البلد",
+    "surah_en_name": "Al-Balad",
+    "surah_en_name_translation": "The City",
+    "revelation_type": "Meccan",
+    "total_ayah": 20
+  },
+  {
+    "id": 91,
+    "surah_number": 91,
+    "surah_ar_name": "سورة الشمس",
+    "surah_en_name": "Ash-Shams",
+    "surah_en_name_translation": "The Sun",
+    "revelation_type": "Meccan",
+    "total_ayah": 15
+  },
+  {
+    "id": 92,
+    "surah_number": 92,
+    "surah_ar_name": "سورة الليل",
+    "surah_en_name": "Al-Lail",
+    "surah_en_name_translation": "The Night",
+    "revelation_type": "Meccan",
+    "total_ayah": 21
+  },
+  {
+    "id": 93,
+    "surah_number": 93,
+    "surah_ar_name": "سورة الضحى",
+    "surah_en_name": "Ad-Dhuhaa",
+    "surah_en_name_translation": "The Morning Hours",
+    "revelation_type": "Meccan",
+    "total_ayah": 11
+  },
+  {
+    "id": 94,
+    "surah_number": 94,
+    "surah_ar_name": "سورة الشرح",
+    "surah_en_name": "Ash-Sharh",
+    "surah_en_name_translation": "The Consolation",
+    "revelation_type": "Meccan",
+    "total_ayah": 8
+  },
+  {
+    "id": 95,
+    "surah_number": 95,
+    "surah_ar_name": "سورة التين",
+    "surah_en_name": "At-Tin",
+    "surah_en_name_translation": "The Fig",
+    "revelation_type": "Meccan",
+    "total_ayah": 8
+  },
+  {
+    "id": 96,
+    "surah_number": 96,
+    "surah_ar_name": "سورة العلق",
+    "surah_en_name": "Al-Alaq",
+    "surah_en_name_translation": "The Clot",
+    "revelation_type": "Meccan",
+    "total_ayah": 19
+  },
+  {
+    "id": 97,
+    "surah_number": 97,
+    "surah_ar_name": "سورة القدر",
+    "surah_en_name": "Al-Qadr",
+    "surah_en_name_translation": "The Power, Fate",
+    "revelation_type": "Meccan",
+    "total_ayah": 5
+  },
+  {
+    "id": 98,
+    "surah_number": 98,
+    "surah_ar_name": "سورة البينة",
+    "surah_en_name": "Al-Bayyina",
+    "surah_en_name_translation": "The Evidence",
+    "revelation_type": "Medinan",
+    "total_ayah": 8
+  },
+  {
+    "id": 99,
+    "surah_number": 99,
+    "surah_ar_name": "سورة الزلزلة",
+    "surah_en_name": "Az-Zalzala",
+    "surah_en_name_translation": "The Earthquake",
+    "revelation_type": "Medinan",
+    "total_ayah": 8
+  },
+  {
+    "id": 100,
+    "surah_number": 100,
+    "surah_ar_name": "سورة العاديات",
+    "surah_en_name": "Al-Aadiyaat",
+    "surah_en_name_translation": "The Chargers",
+    "revelation_type": "Meccan",
+    "total_ayah": 11
+  },
+  {
+    "id": 101,
+    "surah_number": 101,
+    "surah_ar_name": "سورة القارعة",
+    "surah_en_name": "Al-Qaari'a",
+    "surah_en_name_translation": "The Calamity",
+    "revelation_type": "Meccan",
+    "total_ayah": 11
+  },
+  {
+    "id": 102,
+    "surah_number": 102,
+    "surah_ar_name": "سورة التكاثر",
+    "surah_en_name": "At-Takaathur",
+    "surah_en_name_translation": "Competition",
+    "revelation_type": "Meccan",
+    "total_ayah": 8
+  },
+  {
+    "id": 103,
+    "surah_number": 103,
+    "surah_ar_name": "سورة العصر",
+    "surah_en_name": "Al-Asr",
+    "surah_en_name_translation": "The Declining Day, Epoch",
+    "revelation_type": "Meccan",
+    "total_ayah": 3
+  },
+  {
+    "id": 104,
+    "surah_number": 104,
+    "surah_ar_name": "سورة الهمزة",
+    "surah_en_name": "Al-Humaza",
+    "surah_en_name_translation": "The Traducer",
+    "revelation_type": "Meccan",
+    "total_ayah": 9
+  },
+  {
+    "id": 105,
+    "surah_number": 105,
+    "surah_ar_name": "سورة الفيل",
+    "surah_en_name": "Al-Fil",
+    "surah_en_name_translation": "The Elephant",
+    "revelation_type": "Meccan",
+    "total_ayah": 5
+  },
+  {
+    "id": 106,
+    "surah_number": 106,
+    "surah_ar_name": "سورة قريش",
+    "surah_en_name": "Quraish",
+    "surah_en_name_translation": "Quraysh",
+    "revelation_type": "Meccan",
+    "total_ayah": 4
+  },
+  {
+    "id": 107,
+    "surah_number": 107,
+    "surah_ar_name": "سورة الماعون",
+    "surah_en_name": "Al-Maa'un",
+    "surah_en_name_translation": "Almsgiving",
+    "revelation_type": "Meccan",
+    "total_ayah": 7
+  },
+  {
+    "id": 108,
+    "surah_number": 108,
+    "surah_ar_name": "سورة الكوثر",
+    "surah_en_name": "Al-Kawthar",
+    "surah_en_name_translation": "Abundance",
+    "revelation_type": "Meccan",
+    "total_ayah": 3
+  },
+  {
+    "id": 109,
+    "surah_number": 109,
+    "surah_ar_name": "سورة الكافرون",
+    "surah_en_name": "Al-Kaafiroon",
+    "surah_en_name_translation": "The Disbelievers",
+    "revelation_type": "Meccan",
+    "total_ayah": 6
+  },
+  {
+    "id": 110,
+    "surah_number": 110,
+    "surah_ar_name": "سورة النصر",
+    "surah_en_name": "An-Nasr",
+    "surah_en_name_translation": "Divine Support",
+    "revelation_type": "Medinan",
+    "total_ayah": 3
+  },
+  {
+    "id": 111,
+    "surah_number": 111,
+    "surah_ar_name": "سورة المسد",
+    "surah_en_name": "Al-Masad",
+    "surah_en_name_translation": "The Palm Fibre",
+    "revelation_type": "Meccan",
+    "total_ayah": 5
+  },
+  {
+    "id": 112,
+    "surah_number": 112,
+    "surah_ar_name": "سورة الإخلاص",
+    "surah_en_name": "Al-Ikhlaas",
+    "surah_en_name_translation": "Sincerity",
+    "revelation_type": "Meccan",
+    "total_ayah": 4
+  },
+  {
+    "id": 113,
+    "surah_number": 113,
+    "surah_ar_name": "سورة الفلق",
+    "surah_en_name": "Al-Falaq",
+    "surah_en_name_translation": "The Dawn",
+    "revelation_type": "Meccan",
+    "total_ayah": 5
+  },
+  {
+    "id": 114,
+    "surah_number": 114,
+    "surah_ar_name": "سورة الناس",
+    "surah_en_name": "An-Naas",
+    "surah_en_name_translation": "Mankind",
+    "revelation_type": "Meccan",
+    "total_ayah": 6
+  }
+]

@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    transition: background-color .5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    text-decoration: none;
+}
+
+.sidenav a:active {
+    text-decoration: none;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -4px;
+    right: 3px;
+    font-size: 28px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 767px) {
+    #ayah_tr {
+        margin: 0;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.main {
+    float: left;
+    width: 100%;
+    transition: margin-left .5s;
+    padding: 0;
+}
+
+
+.ayah_td {
+    float: right;
+    direction: rtl;
+    font-size: x-large;
+    padding: 7px;
+    text-align: right;
+    color: #2c2d31;
+}
+
+#bismi_auzu_td_id{
+    direction: rtl;
+    border: none;
+    font-size: 32px;
+    padding: 7px;
+    text-align: center;
+    color: brown;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table a {
+    color: black;
+}
+
+td, th {
+    text-align: left;
+}
+
+tr{
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sample_surah_info_tr:hover{
+    background-color: #b5dcb3;
+}
+
+
+.round_button {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    z-index: 99;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.select2-selection__arrow {
+    margin-right: 9px;
+}
+
+
+input[type="text"] {
+    height: 28px;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 100;
+    outline: none;
+    padding: 3px 60px 3px 10px;
+    width: 100%;
+    top: 0;
+    cursor: pointer;
+}
+
+
+input[type="text"]:focus {
+    z-index: 1;
+    cursor: text;
+}
+
+
+input[type="submit"] {
+    height: 28px;
+    width: 28px;
+    display: inline-block;
+    float: right;
+    text-indent: -10000px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    transition: opacity .4s ease;
+}
+
+.wrapper .row {
+    height: auto;
+    padding: 8px 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    float: right;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    bottom: 8px;
+}
+
+#nav_span{
+    font-size:23px;
+    cursor:pointer;
+    float: left;
+    margin: 6px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
